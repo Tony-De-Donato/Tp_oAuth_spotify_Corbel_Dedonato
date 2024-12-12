@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify API Test</title>
+  </head>
+  <body>
+    <h1>Test de l'API Spotify</h1>
+
+    <button id="loginButton">Se connecter via Spotify</button>
+
+    <h2>Entrez votre Access Token</h2>
+    <input type="text" id="accessTokenInput" placeholder="Access Token" />
+    <button id="setTokenButton">Utiliser le Token</button>
+
+    <h2>Recherche de titres</h2>
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Entrez un titre ou un artiste"
+    />
+    <button id="searchButton">Rechercher</button>
+    <ul id="searchResults"></ul>
+
+    <h2>Derniers titres joués</h2>
+    <button id="fetchTracksButton" disabled>Récupérer les titres joués</button>
+    <ul id="tracksList"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
