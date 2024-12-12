@@ -1,7 +1,6 @@
-
-// Dashboard.jsx
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import TrackPreview from './TrackPreview';
 import axios from 'axios';
 
 const API_BASE_URL = 'http://localhost:3000';
@@ -13,6 +12,12 @@ const Container = styled.div`
     padding: 20px;
 `;
 
+const SongListAndPreview = styled.div`
+    display: flex;
+    //align-items: center;
+    margin: 20px 0;
+`;
+
 const Title = styled.h1`
     color: #1db954;
 `;
@@ -20,42 +25,70 @@ const Title = styled.h1`
 const List = styled.ul`
     list-style: none;
     padding: 0;
+    width: 50%;
 `;
 
 const ListItem = styled.li`
-  padding: 10px 0;
-  border-bottom: 1px solid #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
 `;
 
 const Input = styled.input`
-  padding: 10px;
-  border: none;
-  border-radius: 25px;
-  width: 300px;
-  margin-right: 10px;
+    border: none;
+    border-radius: 25px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
 `;
 
 const Button = styled.button`
-  background-color: #1db954;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
+    background-color: #1db954;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
 `;
 
-function Dashboard() {
-    const [recentTracks, setRecentTracks] = useState([]);
-    const [searchResults, setSearchResults] = useState([]);
+const SongImagePreview = styled.img`
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+`;
+
+const SongMainInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+const SongName = styled.span`
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #bfbfbf;
+`;
+
+const SongArtists = styled.span`
+    font-size: 1em;
+    color: #b3b3b3;
+`;
+
+const TrackPreviewContainer = styled.div`
+    margin-left: 20px;
+    width: 50%;
+`;
+
+
+
+
+const Dashboard = () => {
+    const [tracks, setTracks] = useState([]);
+    const [selectedTrackId, setSelectedTrackId] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
     const token = localStorage.getItem('spotifyToken');
-
-    useEffect(() => {
-        if (token) {
-            fetchRecentTracks();
-        }
-    }, [token]);
 
     const fetchRecentTracks = async () => {
         try {
@@ -64,7 +97,12 @@ function Dashboard() {
                     Authorization: token,
                 },
             });
-            setRecentTracks(response.data.items);
+            setTracks(response.data.items.map((item) => ({
+                id: item.track.id,
+                name: item.track.name,
+                artists: item.track.artists.map((a) => a.name).join(', '),
+                image: item.track.album.images[0]?.url,
+            })));
         } catch (error) {
             console.error('Error fetching recent tracks:', error);
         }
@@ -81,7 +119,12 @@ function Dashboard() {
                     Authorization: token,
                 },
             });
-            setSearchResults(response.data.tracks.items);
+            setTracks(response.data.tracks.items.map((track) => ({
+                id: track.id,
+                name: track.name,
+                artists: track.artists.map((a) => a.name).join(', '),
+                image: track.album.images[0]?.url,
+            })));
         } catch (error) {
             console.error('Error searching tracks:', error);
         }
@@ -89,16 +132,6 @@ function Dashboard() {
 
     return (
         <Container>
-            <Title>Your Recently Played Tracks</Title>
-            <List>
-                {recentTracks.map((item) => (
-                    <ListItem key={item.track.id}>
-                        {item.track.name} - {item.track.artists.map((a) => a.name).join(', ')}
-                    </ListItem>
-                ))}
-            </List>
-
-            <Title>Search Tracks</Title>
             <div>
                 <Input
                     type="text"
@@ -107,16 +140,28 @@ function Dashboard() {
                     onChange={(e) => setSearchQuery(e.target.value)}
                 />
                 <Button onClick={handleSearch}>Search</Button>
+                <Button onClick={fetchRecentTracks}>Afficher les titres récemment écoutés</Button>
             </div>
-            <List>
-                {searchResults.map((track) => (
-                    <ListItem key={track.id}>
-                        {track.name} - {track.artists.map((a) => a.name).join(', ')}
-                    </ListItem>
-                ))}
-            </List>
+
+            <SongListAndPreview >
+                <List>
+                    {tracks.map((track) => (
+                        <ListItem key={track.id}>
+                            {track.image && <SongImagePreview src={track.image} alt={track.name} />}
+                            <SongMainInfo>
+                                <SongName>{track.name}</SongName>
+                                <SongArtists>{track.artists}</SongArtists>
+                            </SongMainInfo>
+                            {/*<Button onClick={() => setSelectedTrackId(track.id)}>Select</Button>*/}
+                        </ListItem>
+                    ))}
+                </List>
+                <TrackPreviewContainer>
+                    <TrackPreview trackId={selectedTrackId}/>
+                </TrackPreviewContainer>
+            </SongListAndPreview>
         </Container>
     );
-}
+};
 
 export default Dashboard;
