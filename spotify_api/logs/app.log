@@ -119,3 +119,67 @@
 {"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T12:09:43.841Z"}
 {"level":"info","message":"Données pour la clé 'recentlyPlayed:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I' récupérées depuis le cache.","timestamp":"2024-12-13T12:09:43.843Z"}
 {"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T12:09:43.845Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T13:38:57.198Z"}
+{"level":"info","message":"Auth URL requested for client ID: ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T13:39:34.031Z"}
+{"level":"info","message":"Redirecting to Spotify authorization URL: https://accounts.spotify.com/authorize?response_type=code&client_id=ac4bf4eaa013457cbe39ecc94fa6ebce&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fcallback&scope=user-read-recently-played","timestamp":"2024-12-13T13:39:34.032Z"}
+{"level":"info","message":"Spotify authorization URL sent","timestamp":"2024-12-13T13:39:34.039Z"}
+{"level":"info","message":"Exchanging authorization code for token of client ID: ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T13:39:34.325Z"}
+{"level":"info","message":"Token data received successfully","timestamp":"2024-12-13T13:39:34.610Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T13:40:03.343Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T13:40:03.727Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQC_HeYhVExPjskcWmMQSyWcFUVmCOcYV_e_Pf3LrlKbkTdj8jS_hoQPyS_PnNG_n3JM29UiC7PgkKsE3Ca3KZ_9DmXAKeOzDTg8tQyzaD6aRQkikk2uzDmD15ZTN7NMbiqIzxi1KdzXqxRKxLqwW6MJ1jZb-johuNni1Qd7v9M9yNIHyHtfJ6fgJdx3' mises en cache.","timestamp":"2024-12-13T13:40:03.732Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T13:40:03.736Z"}
+{"level":"info","message":"Auth URL requested for client ID: ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T13:42:18.654Z"}
+{"level":"info","message":"Redirecting to Spotify authorization URL: https://accounts.spotify.com/authorize?response_type=code&client_id=ac4bf4eaa013457cbe39ecc94fa6ebce&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fcallback&scope=user-read-recently-played","timestamp":"2024-12-13T13:42:18.655Z"}
+{"level":"info","message":"Spotify authorization URL sent","timestamp":"2024-12-13T13:42:18.657Z"}
+{"level":"info","message":"Exchanging authorization code for token of client ID: ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T13:42:18.924Z"}
+{"level":"info","message":"Token data received successfully","timestamp":"2024-12-13T13:42:19.102Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T13:42:30.532Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T13:42:30.931Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQBZKfU5w7ft-UAlyODlGpxG19AH3SA6reffu3LzQilZ-r7hBigrL2IiVOyd9bVmKepH-fDQ_qStBNn3MPhH5AW8Zw4sckF2LkiQcqAyG6CV72Xu-FJJKF39LBh9I8H_VL8VvRzL-nDxGSyemnbNuCvxH0xOk2BQGxS7dyKdNaEOI5uXpAHcZYugrrh8' mises en cache.","timestamp":"2024-12-13T13:42:30.935Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T13:42:30.937Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T13:42:38.153Z"}
+{"level":"info","message":"Résultats de recherche pour 'lol' récupérés depuis l'API.","timestamp":"2024-12-13T13:42:38.801Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQBZKfU5w7ft-UAlyODlGpxG19AH3SA6reffu3LzQilZ-r7hBigrL2IiVOyd9bVmKepH-fDQ_qStBNn3MPhH5AW8Zw4sckF2LkiQcqAyG6CV72Xu-FJJKF39LBh9I8H_VL8VvRzL-nDxGSyemnbNuCvxH0xOk2BQGxS7dyKdNaEOI5uXpAHcZYugrrh8:lol' mises en cache.","timestamp":"2024-12-13T13:42:38.803Z"}
+{"level":"info","message":"Tracks successfully fetched","timestamp":"2024-12-13T13:42:38.805Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T13:42:45.769Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQBZKfU5w7ft-UAlyODlGpxG19AH3SA6reffu3LzQilZ-r7hBigrL2IiVOyd9bVmKepH-fDQ_qStBNn3MPhH5AW8Zw4sckF2LkiQcqAyG6CV72Xu-FJJKF39LBh9I8H_VL8VvRzL-nDxGSyemnbNuCvxH0xOk2BQGxS7dyKdNaEOI5uXpAHcZYugrrh8' récupérées depuis le cache.","timestamp":"2024-12-13T13:42:45.774Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T13:42:45.778Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T13:47:46.370Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T13:47:46.682Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQBZKfU5w7ft-UAlyODlGpxG19AH3SA6reffu3LzQilZ-r7hBigrL2IiVOyd9bVmKepH-fDQ_qStBNn3MPhH5AW8Zw4sckF2LkiQcqAyG6CV72Xu-FJJKF39LBh9I8H_VL8VvRzL-nDxGSyemnbNuCvxH0xOk2BQGxS7dyKdNaEOI5uXpAHcZYugrrh8' mises en cache.","timestamp":"2024-12-13T13:47:46.687Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T13:47:46.690Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T13:47:50.756Z"}
+{"level":"info","message":"Résultats de recherche pour 'lol' récupérés depuis l'API.","timestamp":"2024-12-13T13:47:51.208Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQBZKfU5w7ft-UAlyODlGpxG19AH3SA6reffu3LzQilZ-r7hBigrL2IiVOyd9bVmKepH-fDQ_qStBNn3MPhH5AW8Zw4sckF2LkiQcqAyG6CV72Xu-FJJKF39LBh9I8H_VL8VvRzL-nDxGSyemnbNuCvxH0xOk2BQGxS7dyKdNaEOI5uXpAHcZYugrrh8:lol' mises en cache.","timestamp":"2024-12-13T13:47:51.209Z"}
+{"level":"info","message":"Tracks successfully fetched","timestamp":"2024-12-13T13:47:51.211Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T13:59:19.025Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T13:59:19.459Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQBZKfU5w7ft-UAlyODlGpxG19AH3SA6reffu3LzQilZ-r7hBigrL2IiVOyd9bVmKepH-fDQ_qStBNn3MPhH5AW8Zw4sckF2LkiQcqAyG6CV72Xu-FJJKF39LBh9I8H_VL8VvRzL-nDxGSyemnbNuCvxH0xOk2BQGxS7dyKdNaEOI5uXpAHcZYugrrh8' mises en cache.","timestamp":"2024-12-13T13:59:19.463Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T13:59:19.468Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T15:01:57.264Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T15:02:07.140Z"}
+{"error":{"message":"The access token expired","status":401},"level":"error","message":"Error while fetching recently played tracks","timestamp":"2024-12-13T15:02:07.408Z"}
+{"level":"info","message":"Auth URL requested for client ID: ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T15:02:18.464Z"}
+{"level":"info","message":"Redirecting to Spotify authorization URL: https://accounts.spotify.com/authorize?response_type=code&client_id=ac4bf4eaa013457cbe39ecc94fa6ebce&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fcallback&scope=user-read-recently-played","timestamp":"2024-12-13T15:02:18.466Z"}
+{"level":"info","message":"Spotify authorization URL sent","timestamp":"2024-12-13T15:02:18.470Z"}
+{"level":"info","message":"Exchanging authorization code for token of client ID: ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T15:02:18.769Z"}
+{"level":"info","message":"Token data received successfully","timestamp":"2024-12-13T15:02:18.953Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T15:02:34.302Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T15:02:34.597Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQA0Se-H6SMYgH2Yr6D21iSDRbZiZgV0kaRL19vW9KTfrkXfvZnYaiuVvwLmBFufSSASE4IR9uwkp6XREmZBiu3HrvCrF8pC29QEJFCA1VhDpDMev7G6xHQGEYYKtQki5MVgTU3l22OpCAYkCgCBc20ebO_0BNlQ8Mnox4cHQFH8sQsD-tXIgYlZtB3v' mises en cache.","timestamp":"2024-12-13T15:02:34.603Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T15:02:34.606Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T15:02:39.031Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQA0Se-H6SMYgH2Yr6D21iSDRbZiZgV0kaRL19vW9KTfrkXfvZnYaiuVvwLmBFufSSASE4IR9uwkp6XREmZBiu3HrvCrF8pC29QEJFCA1VhDpDMev7G6xHQGEYYKtQki5MVgTU3l22OpCAYkCgCBc20ebO_0BNlQ8Mnox4cHQFH8sQsD-tXIgYlZtB3v' récupérées depuis le cache.","timestamp":"2024-12-13T15:02:39.036Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T15:02:39.040Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T15:02:49.871Z"}
+{"level":"info","message":"Résultats de recherche pour 'teeee' récupérés depuis l'API.","timestamp":"2024-12-13T15:02:50.469Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQA0Se-H6SMYgH2Yr6D21iSDRbZiZgV0kaRL19vW9KTfrkXfvZnYaiuVvwLmBFufSSASE4IR9uwkp6XREmZBiu3HrvCrF8pC29QEJFCA1VhDpDMev7G6xHQGEYYKtQki5MVgTU3l22OpCAYkCgCBc20ebO_0BNlQ8Mnox4cHQFH8sQsD-tXIgYlZtB3v:teeee' mises en cache.","timestamp":"2024-12-13T15:02:50.473Z"}
+{"level":"info","message":"Tracks successfully fetched","timestamp":"2024-12-13T15:02:50.478Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T15:02:59.189Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQA0Se-H6SMYgH2Yr6D21iSDRbZiZgV0kaRL19vW9KTfrkXfvZnYaiuVvwLmBFufSSASE4IR9uwkp6XREmZBiu3HrvCrF8pC29QEJFCA1VhDpDMev7G6xHQGEYYKtQki5MVgTU3l22OpCAYkCgCBc20ebO_0BNlQ8Mnox4cHQFH8sQsD-tXIgYlZtB3v' récupérées depuis le cache.","timestamp":"2024-12-13T15:02:59.196Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T15:02:59.200Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T15:52:12.330Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T15:52:12.708Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQA0Se-H6SMYgH2Yr6D21iSDRbZiZgV0kaRL19vW9KTfrkXfvZnYaiuVvwLmBFufSSASE4IR9uwkp6XREmZBiu3HrvCrF8pC29QEJFCA1VhDpDMev7G6xHQGEYYKtQki5MVgTU3l22OpCAYkCgCBc20ebO_0BNlQ8Mnox4cHQFH8sQsD-tXIgYlZtB3v' mises en cache.","timestamp":"2024-12-13T15:52:12.710Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T15:52:12.711Z"}
