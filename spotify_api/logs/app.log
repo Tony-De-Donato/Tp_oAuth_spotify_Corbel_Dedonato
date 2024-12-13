@@ -27,3 +27,95 @@
 {"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T10:08:48.534Z"}
 {"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:09:51.516Z"}
 {"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T10:09:51.807Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T10:39:08.553Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:39:16.944Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T10:39:17.346Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:39:17.571Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T10:39:17.749Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:39:19.994Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T10:39:20.189Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:39:21.785Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T10:39:22.024Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:39:23.118Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T10:39:23.284Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T10:40:56.893Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T10:52:34.704Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:52:43.542Z"}
+{"level":"info","message":"Données des morceaux récemment joués mises en cache.","timestamp":"2024-12-13T10:52:43.872Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T10:52:43.875Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:52:55.583Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis le cache.","timestamp":"2024-12-13T10:52:55.587Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T10:52:55.589Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T11:54:19.858Z"}
+{"level":"info","message":"Auth URL requested for client ID: ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T11:54:30.228Z"}
+{"level":"info","message":"Redirecting to Spotify authorization URL: https://accounts.spotify.com/authorize?response_type=code&client_id=ac4bf4eaa013457cbe39ecc94fa6ebce&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fcallback&scope=user-read-recently-played","timestamp":"2024-12-13T11:54:30.229Z"}
+{"level":"info","message":"Spotify authorization URL sent","timestamp":"2024-12-13T11:54:30.233Z"}
+{"level":"info","message":"Exchanging authorization code for token of client ID: ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T11:54:30.519Z"}
+{"level":"info","message":"Token data received successfully","timestamp":"2024-12-13T11:54:30.760Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T11:54:54.416Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T11:54:54.712Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I' mises en cache.","timestamp":"2024-12-13T11:54:54.715Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T11:54:54.717Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T11:55:38.161Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I' récupérées depuis le cache.","timestamp":"2024-12-13T11:55:38.165Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T11:55:38.167Z"}
+{"level":"info","message":"Auth URL requested for client ID: ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T11:57:37.647Z"}
+{"level":"info","message":"Redirecting to Spotify authorization URL: https://accounts.spotify.com/authorize?response_type=code&client_id=ac4bf4eaa013457cbe39ecc94fa6ebce&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fcallback&scope=user-read-recently-played","timestamp":"2024-12-13T11:57:37.648Z"}
+{"level":"info","message":"Spotify authorization URL sent","timestamp":"2024-12-13T11:57:37.650Z"}
+{"level":"info","message":"Exchanging authorization code for token of client ID: ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T11:57:37.851Z"}
+{"level":"info","message":"Token data received successfully","timestamp":"2024-12-13T11:57:38.014Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T11:57:48.117Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T11:57:48.405Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I' mises en cache.","timestamp":"2024-12-13T11:57:48.408Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T11:57:48.410Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T11:57:55.722Z"}
+{"level":"info","message":"Résultats de recherche pour 'jul' récupérés depuis l'API.","timestamp":"2024-12-13T11:57:56.260Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I:jul' mises en cache.","timestamp":"2024-12-13T11:57:56.262Z"}
+{"level":"info","message":"Tracks successfully fetched","timestamp":"2024-12-13T11:57:56.264Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T11:58:16.051Z"}
+{"level":"info","message":"Résultats de recherche pour 'test' récupérés depuis l'API.","timestamp":"2024-12-13T11:58:16.513Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I:test' mises en cache.","timestamp":"2024-12-13T11:58:16.515Z"}
+{"level":"info","message":"Tracks successfully fetched","timestamp":"2024-12-13T11:58:16.517Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T11:58:22.885Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I:test' récupérées depuis le cache.","timestamp":"2024-12-13T11:58:22.887Z"}
+{"level":"info","message":"Tracks successfully fetched","timestamp":"2024-12-13T11:58:22.889Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T11:58:32.298Z"}
+{"level":"info","message":"Résultats de recherche pour 'rer' récupérés depuis l'API.","timestamp":"2024-12-13T11:58:32.779Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I:rer' mises en cache.","timestamp":"2024-12-13T11:58:32.781Z"}
+{"level":"info","message":"Tracks successfully fetched","timestamp":"2024-12-13T11:58:32.783Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T11:58:45.881Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I' récupérées depuis le cache.","timestamp":"2024-12-13T11:58:45.885Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T11:58:45.887Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T12:03:21.564Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T12:03:22.177Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I' mises en cache.","timestamp":"2024-12-13T12:03:22.179Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T12:03:22.184Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T12:07:55.062Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T12:07:55.416Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I' mises en cache.","timestamp":"2024-12-13T12:07:55.418Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T12:07:55.421Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T12:08:02.033Z"}
+{"level":"info","message":"Résultats de recherche pour 'tes' récupérés depuis l'API.","timestamp":"2024-12-13T12:08:02.612Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I:tes' mises en cache.","timestamp":"2024-12-13T12:08:02.614Z"}
+{"level":"info","message":"Tracks successfully fetched","timestamp":"2024-12-13T12:08:02.615Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T12:08:05.464Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I' récupérées depuis le cache.","timestamp":"2024-12-13T12:08:05.467Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T12:08:05.469Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T12:09:03.797Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T12:09:04.108Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I' mises en cache.","timestamp":"2024-12-13T12:09:04.111Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T12:09:04.113Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T12:09:05.578Z"}
+{"level":"info","message":"Résultats de recherche pour 'tes' récupérés depuis l'API.","timestamp":"2024-12-13T12:09:05.869Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I:tes' mises en cache.","timestamp":"2024-12-13T12:09:05.870Z"}
+{"level":"info","message":"Tracks successfully fetched","timestamp":"2024-12-13T12:09:05.872Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T12:09:07.103Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I' récupérées depuis le cache.","timestamp":"2024-12-13T12:09:07.105Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T12:09:07.107Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T12:09:30.410Z"}
+{"level":"info","message":"Résultats de recherche pour 'test' récupérés depuis l'API.","timestamp":"2024-12-13T12:09:30.892Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I:test' mises en cache.","timestamp":"2024-12-13T12:09:30.894Z"}
+{"level":"info","message":"Tracks successfully fetched","timestamp":"2024-12-13T12:09:30.896Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T12:09:43.841Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQCXANF7eeSnb6-kfKrFrrzN7IvztarxP3WjuneoUNYz1Afz-VJhj-XndFNjUAgf8lEdd6MEg1JyUvNFB6iQ4spGwpSEm9etwNavua0i97at5TgIfMcbzOAfCNRJTYmJg80_lMqdVjS0hGKs6o79maNFnn39qbHVkLQtkAu04RtooHQFMfl1-mb8bg_I' récupérées depuis le cache.","timestamp":"2024-12-13T12:09:43.843Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T12:09:43.845Z"}

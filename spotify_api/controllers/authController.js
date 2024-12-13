@@ -1,13 +1,24 @@
+
 const { getAuthorizationUrl, exchangeAuthorizationCode } = require('../services/spotifyAuthService');
 const log = require('../logger');
 
-exports.getSpotifyAuthUrl = (req, res) => {
+/**
+ * Fournit l'URL d'autorisation Spotify.
+ * @param {object} req - Requête HTTP.
+ * @param {object} res - Réponse HTTP.
+ */
+const getSpotifyAuthUrl = (req, res) => {
   const authUrl = getAuthorizationUrl();
   res.json({ url: authUrl });
+  log.info('Spotify authorization URL sent');
 };
 
-
-exports.handleSpotifyCallback = async (req, res) => {
+/**
+ * Gère le callback de Spotify après l'autorisation.
+ * @param {object} req - Requête HTTP.
+ * @param {object} res - Réponse HTTP.
+ */
+const handleSpotifyCallback = async (req, res) => {
   const code = req.query.code;
 
   if (!code) {
@@ -20,7 +31,9 @@ exports.handleSpotifyCallback = async (req, res) => {
     res.json(tokenData);
     log.info('Token data received successfully');
   } catch (error) {
+    log.error('Error while exchanging authorization code for token', error.message || error);
     res.status(500).json({ error: error.message });
-    log.error('Error while exchanging authorization code for token', error);
   }
 };
+
+module.exports = { getSpotifyAuthUrl, handleSpotifyCallback };
