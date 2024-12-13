@@ -1,7 +1,8 @@
 const app = require('./app');
+const log = require('./logger');
 
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+    log.info(`Server is running on port ${PORT}`);
 });

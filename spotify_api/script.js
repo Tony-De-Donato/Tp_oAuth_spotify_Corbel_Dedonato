@@ -8,7 +8,6 @@ document.querySelector("#loginButton").addEventListener('click', async () => {
         const response = await fetch(`${API_BASE_URL}/auth/login`);
         const data = await response.json();
         if (data.url) {
-            // Ouvre l'URL dans un nouvel onglet
             window.open(data.url, '_blank');
         } else {
             console.error('URL de connexion non trouvée');
@@ -19,7 +18,6 @@ document.querySelector("#loginButton").addEventListener('click', async () => {
 });
 
 
-// Stock le token
 document.querySelector('#setTokenButton').addEventListener('click', () => {
     const tokenInput = document.querySelector('#accessTokenInput').value;
     if (tokenInput) {

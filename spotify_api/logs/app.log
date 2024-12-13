@@ -1,0 +1,29 @@
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T10:02:19.973Z"}
+{"level":"info","message":"Auth URL requested for client ID : ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T10:03:18.648Z"}
+{"level":"info","message":"Redirecting to Spotify authorization URL : https://accounts.spotify.com/authorize?response_type=code&client_id=ac4bf4eaa013457cbe39ecc94fa6ebce&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Fcallback&scope=user-read-recently-played","timestamp":"2024-12-13T10:03:18.649Z"}
+{"level":"info","message":"Exchanging authorization code for token of client id : ac4bf4eaa013457cbe39ecc94fa6ebce","timestamp":"2024-12-13T10:03:18.905Z"}
+{"level":"info","message":"Token data received successfully","timestamp":"2024-12-13T10:03:19.138Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:03:57.945Z"}
+{"level":"info","message":"Recently played tracks successfully fetched, undefined tracks sent","timestamp":"2024-12-13T10:03:58.288Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:04:11.861Z"}
+{"level":"info","message":"Recently played tracks successfully fetched, undefined tracks sent","timestamp":"2024-12-13T10:04:12.098Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T10:04:25.165Z"}
+{"level":"info","message":"Searching tracks by title or artist : test","timestamp":"2024-12-13T10:04:25.656Z"}
+{"level":"info","message":"Tracks successfully fetched, undefined tracks sent","timestamp":"2024-12-13T10:04:25.657Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T10:05:36.335Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:05:43.471Z"}
+{"level":"info","message":"Recently played tracks successfully fetched, [object Object] tracks sent","timestamp":"2024-12-13T10:05:43.847Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T10:06:29.677Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:06:33.255Z"}
+{"level":"info","message":"Recently played tracks successfully fetched, [object Object] tracks sent","timestamp":"2024-12-13T10:06:33.553Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T10:06:50.267Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:06:52.929Z"}
+{"level":"error","message":"Error while fetching recently played tracks:","timestamp":"2024-12-13T10:06:53.267Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2024-12-13T10:07:37.591Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:07:39.925Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T10:07:40.252Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:08:01.373Z"}
+{"error":{"message":"Invalid access token","status":401},"level":"error","message":"Error while fetching recently played tracks:","timestamp":"2024-12-13T10:08:01.559Z"}
+{"level":"info","message":"Search tracks requested","timestamp":"2024-12-13T10:08:48.534Z"}
+{"level":"info","message":"Recently played tracks requested","timestamp":"2024-12-13T10:09:51.516Z"}
+{"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T10:09:51.807Z"}

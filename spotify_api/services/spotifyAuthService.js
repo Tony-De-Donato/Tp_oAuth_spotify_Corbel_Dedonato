@@ -1,5 +1,6 @@
 const axios = require('axios');
 require('dotenv').config();
+const log = require('../logger');
 
 const SPOTIFY_AUTH_URL = 'https://accounts.spotify.com/authorize';
 const SPOTIFY_TOKEN_URL = 'https://accounts.spotify.com/api/token';
@@ -11,7 +12,8 @@ exports.getAuthorizationUrl = () => {
     redirect_uri: process.env.SPOTIFY_REDIRECT_URI,
     scope: 'user-read-recently-played'
   });
-  console.log(`${SPOTIFY_AUTH_URL}?${params.toString()}`);
+  log.info('Auth URL requested for client ID : ' + process.env.SPOTIFY_CLIENT_ID);
+  log.info('Redirecting to Spotify authorization URL : ' + `${SPOTIFY_AUTH_URL}?${params.toString()}`);
   return `${SPOTIFY_AUTH_URL}?${params.toString()}`;
 };
 
@@ -23,7 +25,7 @@ exports.exchangeAuthorizationCode = async (code) => {
     client_id: process.env.SPOTIFY_CLIENT_ID,
     client_secret: process.env.SPOTIFY_CLIENT_SECRET
   });
-
+  log.info('Exchanging authorization code for token of client id : ' + process.env.SPOTIFY_CLIENT_ID);
   const response = await axios.post(SPOTIFY_TOKEN_URL, params);
   return response.data;
 };
