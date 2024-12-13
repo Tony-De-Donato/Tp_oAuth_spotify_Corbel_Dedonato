@@ -14,8 +14,10 @@ import {
 } from '../styles/DashboardStyles';
 import {Button, Input} from '../styles/GlobalStyles';
 
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = process.env.API_URL || 'http://localhost:3000';
 
+const RECENTLY_PLAYED_TRACKS_ROUTE = process.env.RECENTLY_PLAYED_TRACKS_ROUTE || '/tracks/recently-played';
+const SEARCH_TRACKS_ROUTE = process.env.SEARCH_TRACKS_ROUTE || '/tracks/search?query=';
 
 const Dashboard = () => {
     const [tracks, setTracks] = useState([]);
@@ -25,7 +27,7 @@ const Dashboard = () => {
 
     const fetchRecentTracks = async () => {
         try {
-            const response = await axios.get(`${API_BASE_URL}/tracks/recently-played`, {
+            const response = await axios.get(`${API_BASE_URL}${RECENTLY_PLAYED_TRACKS_ROUTE}`, {
                 headers: {
                     Authorization: token,
                 },
@@ -53,7 +55,7 @@ const Dashboard = () => {
             return;
         }
         try {
-            const response = await axios.get(`${API_BASE_URL}/tracks/search?query=${encodeURIComponent(searchQuery)}`, {
+            const response = await axios.get(`${API_BASE_URL}${SEARCH_TRACKS_ROUTE}${encodeURIComponent(searchQuery)}`, {
                 headers: {
                     Authorization: token,
                 },

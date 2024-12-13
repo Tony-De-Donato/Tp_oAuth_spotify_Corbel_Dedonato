@@ -1,3 +1,4 @@
 /spotify_api/.env
+/spotify_app/.env
 /spotify_api/node_modules
 /spotify_app/node_modules

@@ -11,8 +11,8 @@ import {
 } from '../styles/TrackPreviewStyles';
 
 
-
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = process.env.API_URL || 'http://localhost:3000';
+const TRACK_PREVIEW_ROUTE = process.env.TRACK_PREVIEW_ROUTE || '/tracks/preview?track_id=';
 
 const TrackPreview = ({ trackId }) => {
     const [trackDetails, setTrackDetails] = useState(null);
@@ -22,7 +22,7 @@ const TrackPreview = ({ trackId }) => {
             if (!trackId) return;
 
             try {
-                const response = await axios.get(`${API_BASE_URL}/tracks/preview?track_id=${trackId}`);
+                const response = await axios.get(`${API_BASE_URL}${TRACK_PREVIEW_ROUTE}${trackId}`);
                 setTrackDetails(response.data);
             } catch (error) {
                 console.error('Error fetching track preview:', error);

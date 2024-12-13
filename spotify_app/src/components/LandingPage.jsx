@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'
 import { LandingButton, LandingContainer, LandingInput } from '../styles/LandingPageStyles';
 
-const API_BASE_URL = 'http://localhost:3000';
-
+const API_BASE_URL = process.env.API_URL || 'http://localhost:3000';
+const AUTH_URL_ROUTE = process.env.AUTH_URL_ROUTE || '/auth/login';
 
 
 function LandingPage() {
@@ -12,7 +12,7 @@ function LandingPage() {
 
     const handleConnect = async () => {
         try {
-            const response = await fetch(`${API_BASE_URL}/auth/login`);
+            const response = await fetch(`${API_BASE_URL}${AUTH_URL_ROUTE}`);
             const data = await response.json();
             if (data.url) {
                 window.open(data.url, '_blank');
