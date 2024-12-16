@@ -1,4 +1,3 @@
-// spotifyApi.js
 const axios = require('axios');
 
 /**

@@ -18,6 +18,29 @@ export const LandingButton = styled(Button)`
     font-weight: bold;
 `;
 
+export const SelectTypeButton = styled(Button)`
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: ${({ selected }) => (selected ? '#137b39' : '#072911')};
+    color: ${({ selected }) => (selected ? 'white' : '#b3b3b3')}; 
+    
+    
+    &:hover {
+        transition: all 1000ms ease;
+        background-color: #137b39;
+        color: white;
+        
+    }
+`;
+
+export const SelectTypeButtonContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+`;
+
+
 export const LandingInput = styled(Input)`
     margin-bottom: 20px;
 `;

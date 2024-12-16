@@ -1,9 +1,14 @@
 const express = require('express');
-const { getSpotifyAuthUrl, handleSpotifyCallback } = require('../controllers/authController');
+const { getAuthCodeUrl, getImplicitAuthUrl, handleAuthCodeCallback } = require('../controllers/authController');
 
 const router = express.Router();
 
-router.get('/login', getSpotifyAuthUrl);
-router.get('/callback', handleSpotifyCallback);
+// Authorization Code Grant
+router.get('/authcode', getAuthCodeUrl);
+router.get('/callback', handleAuthCodeCallback);
+
+// Implicit Grant
+router.get('/implicit', getImplicitAuthUrl);
 
 module.exports = router;
+

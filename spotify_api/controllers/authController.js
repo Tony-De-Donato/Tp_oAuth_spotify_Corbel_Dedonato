@@ -1,24 +1,34 @@
-
-const { getAuthorizationUrl, exchangeAuthorizationCode } = require('../services/spotifyAuthService');
+const { getAuthorizationCodeUrl, getImplicitGrantUrl, exchangeAuthorizationCode } = require('../services/spotifyAuthService');
 const log = require('../logger');
 
 /**
- * Fournit l'URL d'autorisation Spotify.
+ * Fournit l'URL pour Authorization Code Grant.
  * @param {object} req - Requête HTTP.
  * @param {object} res - Réponse HTTP.
  */
-const getSpotifyAuthUrl = (req, res) => {
-  const authUrl = getAuthorizationUrl();
-  res.json({ url: authUrl });
-  log.info('Spotify authorization URL sent');
+const getAuthCodeUrl = (req, res) => {
+  const url = getAuthorizationCodeUrl();
+  res.json({ url });
+  log.info('Authorization Code Grant URL sent');
 };
 
 /**
- * Gère le callback de Spotify après l'autorisation.
+ * Fournit l'URL pour Implicit Grant.
  * @param {object} req - Requête HTTP.
  * @param {object} res - Réponse HTTP.
  */
-const handleSpotifyCallback = async (req, res) => {
+const getImplicitAuthUrl = (req, res) => {
+  const url = getImplicitGrantUrl();
+  res.json({ url });
+  log.info('Implicit Grant URL sent');
+};
+
+/**
+ * Gère le callback pour Authorization Code Grant.
+ * @param {object} req - Requête HTTP.
+ * @param {object} res - Réponse HTTP.
+ */
+const handleAuthCodeCallback = async (req, res) => {
   const code = req.query.code;
 
   if (!code) {
@@ -36,4 +46,4 @@ const handleSpotifyCallback = async (req, res) => {
   }
 };
 
-module.exports = { getSpotifyAuthUrl, handleSpotifyCallback };
+module.exports = { getAuthCodeUrl, getImplicitAuthUrl, handleAuthCodeCallback };

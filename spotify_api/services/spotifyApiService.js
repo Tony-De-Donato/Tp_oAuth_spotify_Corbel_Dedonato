@@ -8,7 +8,7 @@ const log = require('../logger');
  * @param {string} accessTokenToMe - Jeton d'accès Spotify.
  * @returns {Promise<object>} - Données des morceaux récemment joués.
  */
-exports.fetchRecentlyPlayed = async (accessTokenToMe) => {
+const fetchRecentlyPlayed = async (accessTokenToMe) => {
   const cacheKey = `recentlyPlayed:${accessTokenToMe}`;
   return getOrSetCache(cacheKey, async () => {
     const data = await spotifyGet('/v1/me/player/recently-played', accessTokenToMe);
@@ -23,7 +23,7 @@ exports.fetchRecentlyPlayed = async (accessTokenToMe) => {
  * @param {string} searchQuery - Requête de recherche.
  * @returns {Promise<object>} - Résultats de recherche de morceaux.
  */
-exports.fetchTracks = async (accessTokenToMe, searchQuery) => {
+const fetchTracks = async (accessTokenToMe, searchQuery) => {
   const cacheKey = `searchTracks:${accessTokenToMe}:${searchQuery}`;
   return getOrSetCache(cacheKey, async () => {
     const data = await spotifyGet('/v1/search', accessTokenToMe, { q: searchQuery, type: 'track', limit: 10 });
@@ -31,3 +31,5 @@ exports.fetchTracks = async (accessTokenToMe, searchQuery) => {
     return data;
   });
 };
+
+module.exports = { fetchRecentlyPlayed, fetchTracks };
