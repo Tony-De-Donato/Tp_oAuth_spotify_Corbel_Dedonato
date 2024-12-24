@@ -88,16 +88,20 @@ const Dashboard = () => {
             <SongListAndPreview >
                 <List>
                     {tracks.map((track) => (
-                        <ListItem key={track.id}>
+                        <ListItem
+                            key={track.id}
+                            $isSelected={selectedTrackId === track.id ? 'false' : 'true'}
+                            onClick={() => setSelectedTrackId(track.id)}
+                        >
                             {track.image && <SongImagePreview src={track.image} alt={track.name} />}
                             <SongMainInfo>
                                 <SongName>{track.name}</SongName>
                                 <SongArtists>{track.artists}</SongArtists>
                             </SongMainInfo>
-                            {/*<Button onClick={() => setSelectedTrackId(track.id)}>Select</Button>*/}
                         </ListItem>
                     ))}
                 </List>
+
                 <TrackPreviewContainer>
                     <TrackPreview trackId={selectedTrackId}/>
                 </TrackPreviewContainer>

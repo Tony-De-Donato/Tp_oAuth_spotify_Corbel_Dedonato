@@ -32,4 +32,39 @@ const fetchTracks = async (accessTokenToMe, searchQuery) => {
   });
 };
 
-module.exports = { fetchRecentlyPlayed, fetchTracks };
+
+
+/**
+ * Récupère les détails d'un morceau par son ID.
+ * @param {string} trackId - ID du morceau.
+ * @param {string} accessToken - Jeton d'accès Spotify.
+ * @returns {Promise<object>} - Détails du morceau.
+ */
+const fetchTrackDetails = async (trackId, accessToken) => {
+  const cacheKey = `trackDetails:${trackId}`;
+  return getOrSetCache(cacheKey, async () => {
+    const data = await spotifyGet(`/v1/tracks/${trackId}`, accessToken);
+    log.info(`Détails du morceau pour '${trackId}' récupérés depuis l'API.`);
+    return data;
+  });
+};
+
+/**
+ * Récupère les détails d'un artiste par son ID.
+ * @param {string} artistId - ID de l'artiste.
+ * @param {string} accessToken - Jeton d'accès Spotify.
+ * @returns {Promise<object>} - Détails de l'artiste.
+ */
+const fetchArtistDetails = async (artistId, accessToken) => {
+  const cacheKey = `artistDetails:${artistId}`;
+  return getOrSetCache(cacheKey, async () => {
+    const data = await spotifyGet(`/v1/artists/${artistId}`, accessToken);
+    log.info(`Détails de l'artiste pour '${artistId}' récupérés depuis l'API.`);
+    return data;
+  });
+};
+
+
+
+
+module.exports = { fetchRecentlyPlayed, fetchTracks, fetchTrackDetails, fetchArtistDetails };

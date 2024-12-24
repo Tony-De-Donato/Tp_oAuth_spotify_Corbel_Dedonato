@@ -1,4 +1,4 @@
-// DashboardStyles.js
+
 import styled from 'styled-components';
 
 export const DashboardContainer = styled.div`
@@ -22,18 +22,36 @@ export const List = styled.ul`
     padding: 0;
     width: 50%;
 `;
-
 export const ListItem = styled.li`
-    padding: 10px 0;
+    padding: 15px;
     border-bottom: 1px solid #333;
     display: flex;
     align-items: center;
+    cursor: pointer; 
+    background-color: ${(props) => (props.$isSelected==='false' ? '#282828' : 'transparent')};
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: #1a1a1a; 
+    }
 `;
 
 export const SongImagePreview = styled.img`
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 5px;
+`;
+
+export const SongName = styled.span`
+    font-weight: bold;
+    font-size: 1.2em;
+    color: ${(props) => (props.$isSelected==='false' ? '#ffffff' : '#bfbfbf')};
+`;
+
+export const SongArtists = styled.span`
+    font-size: 1em;
+    color: ${(props) => (props.$isSelected==='false' ? '#cccccc' : '#b3b3b3')};
 `;
 
 export const SongMainInfo = styled.div`
@@ -41,16 +59,7 @@ export const SongMainInfo = styled.div`
     flex-direction: column;
 `;
 
-export const SongName = styled.span`
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #bfbfbf;
-`;
 
-export const SongArtists = styled.span`
-    font-size: 1em;
-    color: #b3b3b3;
-`;
 
 export const TrackPreviewContainer = styled.div`
     margin-left: 20px;

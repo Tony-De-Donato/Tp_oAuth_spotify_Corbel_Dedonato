@@ -7,7 +7,7 @@ import {
     Label,
     Value,
     PopularityBar,
-    PopularityFill,
+    PopularityFill, AlbumImage, ArtistImage, ArtistInfo, AlbumInfo,
 } from '../styles/TrackPreviewStyles';
 
 
@@ -16,13 +16,18 @@ const TRACK_PREVIEW_ROUTE = process.env.TRACK_PREVIEW_ROUTE || '/tracks/preview?
 
 const TrackPreview = ({ trackId }) => {
     const [trackDetails, setTrackDetails] = useState(null);
+    const token = localStorage.getItem('spotifyToken');
 
     useEffect(() => {
         const fetchTrackDetails = async () => {
             if (!trackId) return;
 
             try {
-                const response = await axios.get(`${API_BASE_URL}${TRACK_PREVIEW_ROUTE}${trackId}`);
+                const response = await axios.get(`${API_BASE_URL}${TRACK_PREVIEW_ROUTE}${trackId}`, {
+                    headers: {
+                        Authorization: token,
+                    },
+                });
                 setTrackDetails(response.data);
             } catch (error) {
                 console.error('Error fetching track preview:', error);
@@ -35,52 +40,41 @@ const TrackPreview = ({ trackId }) => {
     if (!trackDetails) {
         return <PreviewContainer>
             <Title>Track Preview</Title>
-            <Info>
-                <Label>Album:</Label> <Value>Unknown</Value>
-            </Info>
-            <Info>
-                <Label>Release Date:</Label> <Value>Unknown</Value>
-            </Info>
-            <Info>
-                <Label>Artist:</Label> <Value>Unknown</Value>
-            </Info>
-            <Info>
-                <Label>Artist Description:</Label> <Value>Unknown</Value>
-            </Info>
-            <Info>
-                <Label>Popularity:</Label>
-                <PopularityBar>
-                    <PopularityFill width={50} />
-                </PopularityBar>
-            </Info>
         </PreviewContainer>
     }
 
-    const { album_name, release_date, artist_name, artist_description, popularity } = trackDetails;
+    const {album_img, album_name, release_date, artist_img, artist_name, popularity } = trackDetails;
 
     return (
         <PreviewContainer>
             <Title>Track Preview</Title>
+            <AlbumInfo>
+                <AlbumImage src={album_img || '/placeholder-album.png'} alt={album_name || 'Unknown Album'} />
+                <div>
+                    <Info>
+                        <Label>Album:</Label> <Value>{album_name || 'Unknown'}</Value>
+                    </Info>
+                    <Info>
+                        <Label>Release Date:</Label> <Value>{release_date || 'Unknown'}</Value>
+                    </Info>
+                </div>
+            </AlbumInfo>
             <Info>
-                <Label>Album:</Label> <Value>{album_name ? 'Unknown' : album_name}</Value>
-            </Info>
-            <Info>
-                <Label>Release Date:</Label> <Value>{release_date ? 'Unknown' : release_date}</Value>
-            </Info>
-            <Info>
-                <Label>Artist:</Label> <Value>{artist_name ? 'Unknown' : artist_name}</Value>
-            </Info>
-            <Info>
-                <Label>Artist Description:</Label> <Value>{artist_description ? 'Unknown' : artist_description}</Value>
+                <Label>Artist:</Label>
+                <ArtistInfo>
+                    <ArtistImage src={artist_img || '/placeholder-artist.png'} alt={artist_name || 'Unknown Artist'} />
+                    <Value>{artist_name || 'Unknown'}</Value>
+                </ArtistInfo>
             </Info>
             <Info>
                 <Label>Popularity:</Label>
                 <PopularityBar>
-                    <PopularityFill width={popularity ? popularity : 50} />
+                    <PopularityFill width={popularity || 50} />
                 </PopularityBar>
             </Info>
         </PreviewContainer>
     );
+
 };
 
 export default TrackPreview;
