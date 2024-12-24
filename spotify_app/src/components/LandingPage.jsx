@@ -53,13 +53,13 @@ function LandingPage() {
             <h2>Choose your authentication method:</h2>
             <SelectTypeButtonContainer>
                 <SelectTypeButton
-                    selected={selectedGrant === 'authCode'} // Condition pour déterminer si ce bouton est sélectionné
+                    selected={selectedGrant === 'authCode'}
                     onClick={() => handleGrantSelection('authCode')}
                 >
                     Authorization Code Grant
                 </SelectTypeButton>
                 <SelectTypeButton
-                    selected={selectedGrant === 'implicit'} // Condition pour déterminer si ce bouton est sélectionné
+                    selected={selectedGrant === 'implicit'}
                     onClick={() => handleGrantSelection('implicit')}
                 >
                     Implicit Grant
