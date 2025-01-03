@@ -65,3 +65,31 @@ export const TrackPreviewContainer = styled.div`
     margin-left: 20px;
     width: 50%;
 `;
+
+
+export const ApiErrorBackground = styled.div`
+    background-color: rgba(50, 50, 50, 0.75);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const ApiErrorContainer = styled.div`
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const ApiErrorMessage = styled.p`
+    color: #cb4747;
+`;

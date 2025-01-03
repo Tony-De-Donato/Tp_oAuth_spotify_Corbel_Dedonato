@@ -10,7 +10,10 @@ import {
     SongMainInfo,
     SongName,
     SongArtists,
-    DashboardContainer
+    DashboardContainer,
+    ApiErrorBackground,
+    ApiErrorContainer,
+    ApiErrorMessage
 } from '../styles/DashboardStyles';
 import {Button, Input} from '../styles/GlobalStyles';
 
@@ -23,7 +26,14 @@ const Dashboard = () => {
     const [tracks, setTracks] = useState([]);
     const [selectedTrackId, setSelectedTrackId] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
+    const [apiError, setApiError] = useState(null);
     const token = localStorage.getItem('spotifyToken');
+
+    const goHome = () => {
+        setApiError(null);
+        localStorage.removeItem('spotifyToken');
+        window.location.href = '/';
+    }
 
     const fetchRecentTracks = async () => {
         try {
@@ -46,6 +56,7 @@ const Dashboard = () => {
             })));
         } catch (error) {
             console.error('Error fetching recent tracks:', error);
+            setApiError("Error fetching recent tracks, token may have expired.");
         }
     };
 
@@ -69,11 +80,20 @@ const Dashboard = () => {
             })));
         } catch (error) {
             console.error('Error searching tracks:', error);
+            setApiError("Error searching tracks, token may have expired.");
         }
     };
 
     return (
         <DashboardContainer>
+            {apiError && (
+                <ApiErrorBackground>
+                    <ApiErrorContainer>
+                        <ApiErrorMessage>{apiError}</ApiErrorMessage>
+                        <Button onClick={() => goHome()}>Try to reconnect</Button>
+                    </ApiErrorContainer>
+                </ApiErrorBackground>
+            )}
             <div>
                 <Input
                     type="text"

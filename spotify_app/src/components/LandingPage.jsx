@@ -65,7 +65,7 @@ function LandingPage() {
                     Implicit Grant
                 </SelectTypeButton>
             </SelectTypeButtonContainer>
-            <LandingButton onClick={handleConnect}>Connect to Spotify</LandingButton>
+            <LandingButton onClick={handleConnect}>Get Spotify Token</LandingButton>
             <LandingInput
                 type="text"
                 placeholder="Enter your Spotify token"

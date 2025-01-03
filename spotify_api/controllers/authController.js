@@ -32,8 +32,13 @@ const handleAuthCodeCallback = async (req, res) => {
   const code = req.query.code;
 
   if (!code) {
-    log.error('Authorization code not provided');
-    return res.status(400).json({ error: 'Authorization code is required' });
+    if (req.url.toString().includes('access_token')) {
+        log.info('Implicit Grant token received successfully');
+        // return res.json(res.url);
+    } else {
+      log.error('Authorization code not provided');
+      return res.status(400).json({error: 'Authorization code is required'});
+    }
   }
 
   try {
