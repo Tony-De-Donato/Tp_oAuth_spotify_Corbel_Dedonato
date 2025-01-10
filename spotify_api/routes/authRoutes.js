@@ -3,9 +3,10 @@ const { getAuthCodeUrl, getImplicitAuthUrl, handleAuthCodeCallback } = require('
 
 const router = express.Router();
 
+router.get('/callback', handleAuthCodeCallback);
+
 // Authorization Code Grant
 router.get('/authcode', getAuthCodeUrl);
-router.get('/callback', handleAuthCodeCallback);
 
 // Implicit Grant
 router.get('/implicit', getImplicitAuthUrl);
