@@ -425,3 +425,73 @@
 {"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T23:07:06.204Z"}
 {"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2025-01-10T23:07:06.435Z"}
 {"level":"info","message":"Données pour la clé 'recentlyPlayed:Bearer BQBDtDxtdgf_aKTBdBo3CGylsTCCV8NFH5ppR5CJNSmgxbXFRoDWm0Y9lRPT5a4BaLT6cKlBj7Yc087TOi7gecXQu-Y1q0_Uxc6Gea1R8SN_GNVoarTlnVR7S47ayEupz8CnecTP8lo091-Y1ggyMU6rNNRmOTcI2BKmdQJoyqZ4ghUP4Zq66NBjlHLuXMom_1eBZ9yeCRRheHgUKzw' mises en cache.","timestamp":"2025-01-10T23:07:06.439Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T23:07:54.459Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T23:08:00.655Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2025-01-10T23:08:00.920Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:Bearer BQBDtDxtdgf_aKTBdBo3CGylsTCCV8NFH5ppR5CJNSmgxbXFRoDWm0Y9lRPT5a4BaLT6cKlBj7Yc087TOi7gecXQu-Y1q0_Uxc6Gea1R8SN_GNVoarTlnVR7S47ayEupz8CnecTP8lo091-Y1ggyMU6rNNRmOTcI2BKmdQJoyqZ4ghUP4Zq66NBjlHLuXMom_1eBZ9yeCRRheHgUKzw' mises en cache.","timestamp":"2025-01-10T23:08:00.925Z"}
+{"level":"info","message":"Requested track searching...","timestamp":"2025-01-10T23:08:10.771Z"}
+{"error":{"message":"Only valid bearer authentication supported","status":400},"level":"error","message":"Error while searching tracks","timestamp":"2025-01-10T23:08:10.842Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T23:08:32.814Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:Bearer BQBDtDxtdgf_aKTBdBo3CGylsTCCV8NFH5ppR5CJNSmgxbXFRoDWm0Y9lRPT5a4BaLT6cKlBj7Yc087TOi7gecXQu-Y1q0_Uxc6Gea1R8SN_GNVoarTlnVR7S47ayEupz8CnecTP8lo091-Y1ggyMU6rNNRmOTcI2BKmdQJoyqZ4ghUP4Zq66NBjlHLuXMom_1eBZ9yeCRRheHgUKzw' récupérées depuis le cache.","timestamp":"2025-01-10T23:08:32.816Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:08:33.740Z"}
+{"error":{"message":"Only valid bearer authentication supported","status":400},"level":"error","message":"Error while fetching track","timestamp":"2025-01-10T23:08:33.806Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T23:09:11.312Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2025-01-10T23:09:11.465Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:Bearer BQBDtDxtdgf_aKTBdBo3CGylsTCCV8NFH5ppR5CJNSmgxbXFRoDWm0Y9lRPT5a4BaLT6cKlBj7Yc087TOi7gecXQu-Y1q0_Uxc6Gea1R8SN_GNVoarTlnVR7S47ayEupz8CnecTP8lo091-Y1ggyMU6rNNRmOTcI2BKmdQJoyqZ4ghUP4Zq66NBjlHLuXMom_1eBZ9yeCRRheHgUKzw' mises en cache.","timestamp":"2025-01-10T23:09:11.467Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:09:31.102Z"}
+{"error":{"message":"Only valid bearer authentication supported","status":400},"level":"error","message":"Error while fetching track","timestamp":"2025-01-10T23:09:31.170Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:09:50.057Z"}
+{"error":{"message":"Only valid bearer authentication supported","status":400},"level":"error","message":"Error while fetching track","timestamp":"2025-01-10T23:09:50.120Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T23:10:47.539Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:11:00.733Z"}
+{"level":"info","message":"Détails du morceau pour '4PTG3Z6ehGkBFwjybzWkR8' récupérés depuis l'API.","timestamp":"2025-01-10T23:11:00.884Z"}
+{"level":"info","message":"Données pour la clé 'trackDetails:4PTG3Z6ehGkBFwjybzWkR8' mises en cache.","timestamp":"2025-01-10T23:11:00.885Z"}
+{"level":"info","message":"Détails de l'artiste pour '0gxyHStUsqpMadRV0Di1Qt' récupérés depuis l'API.","timestamp":"2025-01-10T23:11:00.934Z"}
+{"level":"info","message":"Données pour la clé 'artistDetails:0gxyHStUsqpMadRV0Di1Qt' mises en cache.","timestamp":"2025-01-10T23:11:00.935Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T23:12:02.676Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:12:06.391Z"}
+{"level":"info","message":"Détails du morceau pour '4PTG3Z6ehGkBFwjybzWkR8' récupérés depuis l'API.","timestamp":"2025-01-10T23:12:06.549Z"}
+{"level":"info","message":"Données pour la clé 'trackDetails:4PTG3Z6ehGkBFwjybzWkR8' mises en cache.","timestamp":"2025-01-10T23:12:06.551Z"}
+{"level":"info","message":"Détails de l'artiste pour '0gxyHStUsqpMadRV0Di1Qt' récupérés depuis l'API.","timestamp":"2025-01-10T23:12:06.602Z"}
+{"level":"info","message":"Données pour la clé 'artistDetails:0gxyHStUsqpMadRV0Di1Qt' mises en cache.","timestamp":"2025-01-10T23:12:06.603Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T23:16:13.871Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:17:40.277Z"}
+{"level":"info","message":"Détails du morceau pour '4PTG3Z6ehGkBFwjybzWkR8' récupérés depuis l'API.","timestamp":"2025-01-10T23:17:40.435Z"}
+{"level":"info","message":"Données pour la clé 'trackDetails:4PTG3Z6ehGkBFwjybzWkR8' mises en cache.","timestamp":"2025-01-10T23:17:40.436Z"}
+{"level":"info","message":"Détails de l'artiste pour '0gxyHStUsqpMadRV0Di1Qt' récupérés depuis l'API.","timestamp":"2025-01-10T23:17:40.488Z"}
+{"level":"info","message":"Données pour la clé 'artistDetails:0gxyHStUsqpMadRV0Di1Qt' mises en cache.","timestamp":"2025-01-10T23:17:40.488Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T23:17:45.655Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2025-01-10T23:17:45.820Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQBDtDxtdgf_aKTBdBo3CGylsTCCV8NFH5ppR5CJNSmgxbXFRoDWm0Y9lRPT5a4BaLT6cKlBj7Yc087TOi7gecXQu-Y1q0_Uxc6Gea1R8SN_GNVoarTlnVR7S47ayEupz8CnecTP8lo091-Y1ggyMU6rNNRmOTcI2BKmdQJoyqZ4ghUP4Zq66NBjlHLuXMom_1eBZ9yeCRRheHgUKzw' mises en cache.","timestamp":"2025-01-10T23:17:45.826Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T23:21:51.336Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2025-01-10T23:21:51.493Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQBDtDxtdgf_aKTBdBo3CGylsTCCV8NFH5ppR5CJNSmgxbXFRoDWm0Y9lRPT5a4BaLT6cKlBj7Yc087TOi7gecXQu-Y1q0_Uxc6Gea1R8SN_GNVoarTlnVR7S47ayEupz8CnecTP8lo091-Y1ggyMU6rNNRmOTcI2BKmdQJoyqZ4ghUP4Zq66NBjlHLuXMom_1eBZ9yeCRRheHgUKzw' mises en cache.","timestamp":"2025-01-10T23:21:51.495Z"}
+{"level":"info","message":"Requested track searching...","timestamp":"2025-01-10T23:21:56.889Z"}
+{"level":"info","message":"Résultats de recherche pour 'from the heavens' récupérés depuis l'API.","timestamp":"2025-01-10T23:21:57.321Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQBDtDxtdgf_aKTBdBo3CGylsTCCV8NFH5ppR5CJNSmgxbXFRoDWm0Y9lRPT5a4BaLT6cKlBj7Yc087TOi7gecXQu-Y1q0_Uxc6Gea1R8SN_GNVoarTlnVR7S47ayEupz8CnecTP8lo091-Y1ggyMU6rNNRmOTcI2BKmdQJoyqZ4ghUP4Zq66NBjlHLuXMom_1eBZ9yeCRRheHgUKzw:from the heavens' mises en cache.","timestamp":"2025-01-10T23:21:57.325Z"}
+{"level":"info","message":"Successfully fetched searched tracks.","timestamp":"2025-01-10T23:21:57.326Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:21:59.877Z"}
+{"level":"info","message":"Détails du morceau pour '5nFrmVaWs7s89ygzbLy9DM' récupérés depuis l'API.","timestamp":"2025-01-10T23:21:59.952Z"}
+{"level":"info","message":"Données pour la clé 'trackDetails:5nFrmVaWs7s89ygzbLy9DM' mises en cache.","timestamp":"2025-01-10T23:21:59.953Z"}
+{"level":"info","message":"Détails de l'artiste pour '2mpgGfU9ADJWttbCdUbjqe' récupérés depuis l'API.","timestamp":"2025-01-10T23:22:00.000Z"}
+{"level":"info","message":"Données pour la clé 'artistDetails:2mpgGfU9ADJWttbCdUbjqe' mises en cache.","timestamp":"2025-01-10T23:22:00.001Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:22:02.517Z"}
+{"level":"info","message":"Détails du morceau pour '2Hf5MJo5GjGwUIySaUxiLJ' récupérés depuis l'API.","timestamp":"2025-01-10T23:22:02.597Z"}
+{"level":"info","message":"Données pour la clé 'trackDetails:2Hf5MJo5GjGwUIySaUxiLJ' mises en cache.","timestamp":"2025-01-10T23:22:02.597Z"}
+{"level":"info","message":"Données pour la clé 'artistDetails:2mpgGfU9ADJWttbCdUbjqe' récupérées depuis le cache.","timestamp":"2025-01-10T23:22:02.597Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:22:03.205Z"}
+{"level":"info","message":"Détails du morceau pour '0wxitlzf6tFDLqKs1KuUdd' récupérés depuis l'API.","timestamp":"2025-01-10T23:22:03.253Z"}
+{"level":"info","message":"Données pour la clé 'trackDetails:0wxitlzf6tFDLqKs1KuUdd' mises en cache.","timestamp":"2025-01-10T23:22:03.254Z"}
+{"level":"info","message":"Détails de l'artiste pour '2UOVgpgiNTC6KK0vSC77aD' récupérés depuis l'API.","timestamp":"2025-01-10T23:22:03.333Z"}
+{"level":"info","message":"Données pour la clé 'artistDetails:2UOVgpgiNTC6KK0vSC77aD' mises en cache.","timestamp":"2025-01-10T23:22:03.334Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:22:04.581Z"}
+{"level":"info","message":"Détails du morceau pour '3IKqDr3H0uSEAqwS8uXJ6z' récupérés depuis l'API.","timestamp":"2025-01-10T23:22:04.637Z"}
+{"level":"info","message":"Données pour la clé 'trackDetails:3IKqDr3H0uSEAqwS8uXJ6z' mises en cache.","timestamp":"2025-01-10T23:22:04.637Z"}
+{"level":"info","message":"Détails de l'artiste pour '6GdTXXdGQ99ZVTnTPkSwLm' récupérés depuis l'API.","timestamp":"2025-01-10T23:22:04.709Z"}
+{"level":"info","message":"Données pour la clé 'artistDetails:6GdTXXdGQ99ZVTnTPkSwLm' mises en cache.","timestamp":"2025-01-10T23:22:04.710Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:22:06.228Z"}
+{"level":"info","message":"Données pour la clé 'trackDetails:0wxitlzf6tFDLqKs1KuUdd' récupérées depuis le cache.","timestamp":"2025-01-10T23:22:06.229Z"}
+{"level":"info","message":"Données pour la clé 'artistDetails:2UOVgpgiNTC6KK0vSC77aD' récupérées depuis le cache.","timestamp":"2025-01-10T23:22:06.229Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:22:06.957Z"}
+{"level":"info","message":"Données pour la clé 'trackDetails:2Hf5MJo5GjGwUIySaUxiLJ' récupérées depuis le cache.","timestamp":"2025-01-10T23:22:06.957Z"}
+{"level":"info","message":"Données pour la clé 'artistDetails:2mpgGfU9ADJWttbCdUbjqe' récupérées depuis le cache.","timestamp":"2025-01-10T23:22:06.957Z"}

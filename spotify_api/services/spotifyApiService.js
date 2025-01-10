@@ -10,7 +10,7 @@ const axios = require('axios');
 const spotifyGet = async (endpoint, accessToken, params = {}) => {
     const response = await axios.get(`https://api.spotify.com${endpoint}`, {
         headers: {
-            Authorization: accessToken,
+            Authorization: `Bearer ${accessToken}`,
         },
         params
     });

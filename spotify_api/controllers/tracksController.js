@@ -5,7 +5,8 @@ const {getSuccessResponse, getErrorResponse} = require("../services/responseServ
 
 
 const getRecentlyPlayed = async (req, res) => {
-    const accessToken = req.headers.authorization;
+    const accessToken = req.headers.authorization?.replace(/bearer /i, "")
+    console.log(accessToken)
     log.info('Requested recently played tracks');
 
     if (!accessToken) {
@@ -28,6 +29,7 @@ const getRecentlyPlayed = async (req, res) => {
 const searchTracks = async (req, res) => {
     let { query } = req.query;
     const accessToken = req.headers.authorization?.replace(/bearer /i, "")
+    console.log(accessToken)
     log.info('Requested track searching...');
 
     if (!query) {
@@ -56,6 +58,7 @@ const searchTracks = async (req, res) => {
 const getTrackPreview = async (req, res) => {
     const { track_id } = req.query;
     const accessToken = req.headers.authorization?.replace(/bearer /i, "")
+    console.log(accessToken)
     log.info('Requested track preview data...');
 
     if (!track_id) {
