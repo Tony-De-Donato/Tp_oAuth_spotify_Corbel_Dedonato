@@ -1,12 +1,8 @@
+
 const { fetchRecentlyPlayed, fetchTracks ,fetchTrackDetails, fetchArtistDetails } = require('../services/spotifyApiService');
-const { getSuccessResponse, getErrorResponse } = require('../services/responseService');
 const log = require('../logger');
 
-/**
- * Récupère les morceaux récemment joués.
- * @param {object} req - Requête HTTP.
- * @param {object} res - Réponse HTTP.
- */
+
 const getRecentlyPlayed = async (req, res) => {
     const accessTokenToMe = req.headers.authorization;
     log.info('Requested recently played tracks');
@@ -25,11 +21,7 @@ const getRecentlyPlayed = async (req, res) => {
     }
 };
 
-/**
- * Recherche des morceaux sur Spotify.
- * @param {object} req - Requête HTTP.
- * @param {object} res - Réponse HTTP.
- */
+
 const searchTracks = async (req, res) => {
     const query = req.query;
     const accessToken = req.headers.authorization;
@@ -54,11 +46,7 @@ const searchTracks = async (req, res) => {
     }
 };
 
-/**
- * Récupère des informations sur un morceau.
- * @param {object} req - Requête HTTP.
- * @param {object} res - Réponse HTTP.
- */
+
 const getTrackPreview = async (req, res) => {
     const { track_id } = req.query;
     const accessToken = req.headers.authorization;
