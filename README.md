@@ -67,10 +67,8 @@ Les fonctionnalités suivantes ont été implémentées :
 - Récupération des informations d'un titre par son ID
 
 Les trois dernières options sont dépendantes de la connexion à Spotify et sous-entendent que l'utilisateur devra fournir dans le header des requêtes concernées l'**access token** obtenu après la connexion :
-```json
-{
- Authorization : Bearer <access token>
-}
+```
+Authorization : Bearer <access token>
 ```
 
 ## Fonctionnalités additionnelles
