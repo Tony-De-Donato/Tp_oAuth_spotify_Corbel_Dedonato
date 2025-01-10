@@ -29,6 +29,7 @@ const TrackPreview = ({ trackId }) => {
                     },
                 });
                 setTrackDetails(response.data);
+                console.log(`fetching ${API_BASE_URL}${TRACK_PREVIEW_ROUTE}${trackId}`);
             } catch (error) {
                 console.error('Error fetching track preview:', error);
             }

@@ -42,6 +42,7 @@ const Dashboard = () => {
                     Authorization: token,
                 },
             });
+            console.log(`fetching ${API_BASE_URL}${RECENTLY_PLAYED_TRACKS_ROUTE}`)
 
             const uniqueTracks = response.data.items.filter(
                 (item, index, self) => index === self.findIndex((t) => t.track.id === item.track.id)
@@ -71,6 +72,7 @@ const Dashboard = () => {
                     Authorization: token,
                 },
             });
+            console.log(`fetching ${API_BASE_URL}${SEARCH_TRACKS_ROUTE}${encodeURIComponent(searchQuery)}`)
             setTracks([]);
             setTracks(response.data.tracks.items.map((track) => ({
                 id: track.id,
