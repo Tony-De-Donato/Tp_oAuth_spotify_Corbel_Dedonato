@@ -55,17 +55,22 @@ npm run start
 
 ## Documentation
 
+Une documentation précise de l'API a été réalisée avec [Swagger](https://swagger.io/tools/swagger-editor/) et est disponible à l'URL suivante de l'API :
+```
+http://localhost/api-docs
+```
+
 Les fonctionnalités suivantes ont été implémentées :
 - Connexion OAuth2 par [Authorization Code](https://developer.spotify.com/documentation/web-api/tutorials/code-flow) et [Implicit Grant](https://developer.spotify.com/documentation/web-api/tutorials/implicit-flow) ;
 - Récupérations des derniers titres joués par l'utilisateur connecté
 - Recherche d'un titre
 - Récupération des informations d'un titre par son ID
 
-Les trois dernières options sont dépendantes de la connexion et sous-entendent que l'utilisateur **devra fournir le token bearer** de la connexion établie, dans le header des requêtes concernées.
-
-Une documentation précise de l'API a été réalisée avec [Swagger](https://swagger.io/tools/swagger-editor/) et est disponible à l'URL suivante de l'API :
-```
-http://localhost/api-docs
+Les trois dernières options sont dépendantes de la connexion à Spotify et sous-entendent que l'utilisateur devra fournir dans le header des requêtes concernées l'**access token** obtenu après la connexion :
+```json
+{
+ Authorization : Bearer <access token>
+}
 ```
 
 ## Fonctionnalités additionnelles
