@@ -1,6 +1,7 @@
 
-const { fetchRecentlyPlayed, fetchTracks ,fetchTrackDetails, fetchArtistDetails } = require('../services/spotifyApiService');
+const { fetchRecentlyPlayed, fetchTracks ,fetchTrackDetails, fetchArtistDetails } = require('../services/spotifyDataService');
 const log = require('../logger');
+const {getSuccessResponse, getErrorResponse} = require("../services/responseService");
 
 
 const getRecentlyPlayed = async (req, res) => {
@@ -17,7 +18,10 @@ const getRecentlyPlayed = async (req, res) => {
         return getSuccessResponse(res, tracks);
     } catch (error) {
         log.error('Error while fetching recently played tracks', error.response?.data || error.message);
-        return getErrorResponse(res, 500, 'Failed to fetch recently played tracks: ' + error.message)
+        if (error.status ===  401) {
+            return getErrorResponse(res, error.status, 'Access token or user scope is not valid')
+        }
+        return getErrorResponse(res, error.status, 'Failed to fetch recently played tracks: ' + error.message)
     }
 };
 
@@ -33,7 +37,7 @@ const searchTracks = async (req, res) => {
     }
     if (!accessToken) {
         log.error('Access token is not provided');
-        return res.status(401).json({ error: 'Access token is required.' });
+        return getErrorResponse(res, 401, 'Access token is required.')
     }
 
     try {
@@ -42,7 +46,10 @@ const searchTracks = async (req, res) => {
         return getSuccessResponse(res, tracks);
     } catch (error) {
         log.error('Error while searching tracks', error.response?.data || error.message);
-        return getErrorResponse(res, 500, `Error while searching tracks: ${error.message}.`)
+        if (error.status ===  401) {
+            return getErrorResponse(res, error.status, 'Access token or user scope is not valid')
+        }
+        return getErrorResponse(res, error.status, 'Error while searching tracks: ' + error.message)
     }
 };
 
@@ -83,7 +90,10 @@ const getTrackPreview = async (req, res) => {
         res.status(200).json(response);
     } catch (error) {
         log.error('Error while fetching track', error.response?.data || error.message);
-        res.status(500).json({ error: 'Failed to fetch track preview.' });
+        if (error.status ===  401) {
+            return getErrorResponse(res, error.status, 'Access token or user scope is not valid')
+        }
+        return getErrorResponse(res, error.status, 'Error while fetching track preview: ' + error.message)
     }
 };
 

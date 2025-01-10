@@ -11,15 +11,168 @@
         "version": "1.0.0",
         "title": "TP2 - Spotify API"
     },
+    "tags": [
+        {
+            "name": "Authentication",
+            "description": "Endpoints related to Spotify user authentication"
+        },
+        {
+            "name": "Spotify Data",
+            "description": "Endpoints related to Spotify API data"
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
+    },
     "paths": {
-        "/heyo": {
+        "/auth/authcode": {
             "get": {
-                "summary": "searches inventory",
+                "summary": "Retrieves Spotify connection URL using Authorization Code Grant method (advised)",
                 "responses": {
-                    "201": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "tags": [
+                    "Authentication"
+                ]
+            }
+        },
+        "/auth/implicit": {
+            "get": {
+                "summary": "Retrives Spotify connection URL using Implicit Grant method",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "tags": [
+                    "Authentication"
+                ]
+            }
+        },
+        "/auth/callback": {
+            "get": {
+                "summary": "Automatic redirection from Spotify after user connection (not to be used manually)",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                },
+                "tags": [
+                    "Authentication"
+                ]
+            }
+        },
+        "/tracks/recently-played": {
+            "get": {
+                "summary": "Retrieves the latest 20 tracks played by authenticated user",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "401": {
+                        "description": "Missing or wrong authentication header"
+                    },
+                    "500": {
                         "description": "test"
                     }
-                }
+                },
+                "tags": [
+                    "Spotify Data"
+                ],
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/tracks/search": {
+            "get": {
+                "summary": "Searches through Spotify titles (by artist, title...)",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "query",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "required": true,
+                        "description": "Search query"
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Missing parameter"
+                    },
+                    "401": {
+                        "description": "Missing or wrong authentication header"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                },
+                "tags": [
+                    "Spotify Data"
+                ]
+            }
+        },
+        "/tracks/preview": {
+            "get": {
+                "summary": "Retrieves preview data of a specific track by its ID",
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "track_id",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "required": true
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Missing parameter"
+                    },
+                    "401": {
+                        "description": "Missing or wrong authentication header"
+                    },
+                    "404": {
+                        "description": "Track not found"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                },
+                "tags": [
+                    "Spotify Data"
+                ]
             }
         }
     }
