@@ -368,3 +368,60 @@
 {"level":"info","message":"Données pour la clé 'recentlyPlayed:BQBOc9sx0CqFOAB_RAaEAQmQKfXcHiIALWsIH_87U1xY8tdKGdEDtiJy_Cr2_zuQzWSlYOkX_kvqxODD7u3pnUeHHIc-JoYIaQ6ShmSsCevU47raPkelt7NkQV22tW0KNLllzl2paF9scWmx93cv1pietD5r4VHo7fKpycsvPNu3cfaNgMvuv4BLas3YS_gpeNEWjMZkZQIw_WmvUUw' mises en cache.","timestamp":"2025-01-10T21:51:47.922Z"}
 {"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T21:52:31.463Z"}
 {"level":"error","message":"Access token is not provided","timestamp":"2025-01-10T21:52:31.463Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T21:53:56.422Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T21:54:09.478Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2025-01-10T21:54:09.745Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQBOc9sx0CqFOAB_RAaEAQmQKfXcHiIALWsIH_87U1xY8tdKGdEDtiJy_Cr2_zuQzWSlYOkX_kvqxODD7u3pnUeHHIc-JoYIaQ6ShmSsCevU47raPkelt7NkQV22tW0KNLllzl2paF9scWmx93cv1pietD5r4VHo7fKpycsvPNu3cfaNgMvuv4BLas3YS_gpeNEWjMZkZQIw_WmvUUw' mises en cache.","timestamp":"2025-01-10T21:54:09.750Z"}
+{"level":"info","message":"Requested track searching...","timestamp":"2025-01-10T21:54:20.291Z"}
+{"level":"info","message":"Résultats de recherche pour 'linkin park heavy is the crown' récupérés depuis l'API.","timestamp":"2025-01-10T21:54:20.796Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQBOc9sx0CqFOAB_RAaEAQmQKfXcHiIALWsIH_87U1xY8tdKGdEDtiJy_Cr2_zuQzWSlYOkX_kvqxODD7u3pnUeHHIc-JoYIaQ6ShmSsCevU47raPkelt7NkQV22tW0KNLllzl2paF9scWmx93cv1pietD5r4VHo7fKpycsvPNu3cfaNgMvuv4BLas3YS_gpeNEWjMZkZQIw_WmvUUw:linkin park heavy is the crown' mises en cache.","timestamp":"2025-01-10T21:54:20.797Z"}
+{"level":"info","message":"Successfully fetched searched tracks.","timestamp":"2025-01-10T21:54:20.798Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T21:54:28.149Z"}
+{"level":"info","message":"Détails du morceau pour '4PTG3Z6ehGkBFwjybzWkR8' récupérés depuis l'API.","timestamp":"2025-01-10T21:54:28.240Z"}
+{"level":"info","message":"Données pour la clé 'trackDetails:4PTG3Z6ehGkBFwjybzWkR8' mises en cache.","timestamp":"2025-01-10T21:54:28.240Z"}
+{"level":"info","message":"Détails de l'artiste pour '0gxyHStUsqpMadRV0Di1Qt' récupérés depuis l'API.","timestamp":"2025-01-10T21:54:28.296Z"}
+{"level":"info","message":"Données pour la clé 'artistDetails:0gxyHStUsqpMadRV0Di1Qt' mises en cache.","timestamp":"2025-01-10T21:54:28.297Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T21:54:42.220Z"}
+{"level":"info","message":"Exchanging authorization code for token","timestamp":"2025-01-10T21:54:48.758Z"}
+{"level":"info","message":"Successfully exchanged token data","timestamp":"2025-01-10T21:54:48.859Z"}
+{"level":"info","message":"Requested track searching...","timestamp":"2025-01-10T21:55:04.047Z"}
+{"level":"info","message":"Résultats de recherche pour 'linkin park heavy is the crown' récupérés depuis l'API.","timestamp":"2025-01-10T21:55:04.419Z"}
+{"level":"info","message":"Données pour la clé 'searchTracks:BQAtiNBlq39zipa6IU5O1i9dyDE_CK7AFP5UbpqiO6G2EeCDatVN7IvzZ7wB5oh_kW-8OmeVYZgsQjW6795JYoY4UkEtXK5QMTqlQNd-TI0DlBI7B2uOMfFIVe9-i_oAX9pAxXibh11ROda_18o7y3XtE3MIWFi9oKkK8mGio2Uk0sVEqrETWJEbqUNCFKks7ra0CP-Lv90q_ZlW1Tk:linkin park heavy is the crown' mises en cache.","timestamp":"2025-01-10T21:55:04.421Z"}
+{"level":"info","message":"Successfully fetched searched tracks.","timestamp":"2025-01-10T21:55:04.422Z"}
+{"level":"info","message":"Successfully generated Implicit Grant URL","timestamp":"2025-01-10T21:56:24.397Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T22:27:41.908Z"}
+{"error":{"message":"The access token expired","status":401},"level":"error","message":"Error while fetching recently played tracks","timestamp":"2025-01-10T22:27:41.986Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T22:36:36.742Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T22:37:03.330Z"}
+{"level":"info","message":"Exchanging authorization code for token","timestamp":"2025-01-10T22:37:10.241Z"}
+{"level":"info","message":"Successfully exchanged token data","timestamp":"2025-01-10T22:37:10.409Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T22:37:27.986Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2025-01-10T22:37:28.291Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQDzP0Yh60ImDhOZEh4h27W3MNjIX4TqjBkPvAeqlA9E4uAo1muRA0BJTGt02f6oC0Kkjlm5EsYsibgkhNfGQ7PsQ97NGBiTZwqX2qX90xZNvv5lJPJ1p9XDaHMLzCouYttcscQHJ-McOoI-_QSx9IVjAF5TX2MMKtqldA2N09AcHcvM8uOTLQI8jNnFLR5DsybaTLhiaIF86ZuQbfU' mises en cache.","timestamp":"2025-01-10T22:37:28.295Z"}
+{"level":"info","message":"Successfully generated Implicit Grant URL","timestamp":"2025-01-10T22:38:11.965Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T22:49:03.641Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T22:49:04.880Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T22:49:05.949Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T22:49:06.131Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T22:49:06.283Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T22:49:06.448Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T22:49:08.051Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T22:49:31.232Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T23:02:38.424Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2025-01-10T23:02:38.605Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQDzP0Yh60ImDhOZEh4h27W3MNjIX4TqjBkPvAeqlA9E4uAo1muRA0BJTGt02f6oC0Kkjlm5EsYsibgkhNfGQ7PsQ97NGBiTZwqX2qX90xZNvv5lJPJ1p9XDaHMLzCouYttcscQHJ-McOoI-_QSx9IVjAF5TX2MMKtqldA2N09AcHcvM8uOTLQI8jNnFLR5DsybaTLhiaIF86ZuQbfU' mises en cache.","timestamp":"2025-01-10T23:02:38.607Z"}
+{"level":"info","message":"Requested track preview data...","timestamp":"2025-01-10T23:02:51.082Z"}
+{"level":"info","message":"Détails du morceau pour '4PTG3Z6ehGkBFwjybzWkR8' récupérés depuis l'API.","timestamp":"2025-01-10T23:02:51.176Z"}
+{"level":"info","message":"Données pour la clé 'trackDetails:4PTG3Z6ehGkBFwjybzWkR8' mises en cache.","timestamp":"2025-01-10T23:02:51.176Z"}
+{"level":"info","message":"Détails de l'artiste pour '0gxyHStUsqpMadRV0Di1Qt' récupérés depuis l'API.","timestamp":"2025-01-10T23:02:51.222Z"}
+{"level":"info","message":"Données pour la clé 'artistDetails:0gxyHStUsqpMadRV0Di1Qt' mises en cache.","timestamp":"2025-01-10T23:02:51.222Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T23:04:42.160Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T23:04:55.681Z"}
+{"level":"info","message":"Exchanging authorization code for token","timestamp":"2025-01-10T23:04:55.853Z"}
+{"level":"info","message":"Successfully exchanged token data","timestamp":"2025-01-10T23:04:56.001Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T23:05:44.544Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T23:06:50.070Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T23:06:57.956Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T23:07:06.204Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2025-01-10T23:07:06.435Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:Bearer BQBDtDxtdgf_aKTBdBo3CGylsTCCV8NFH5ppR5CJNSmgxbXFRoDWm0Y9lRPT5a4BaLT6cKlBj7Yc087TOi7gecXQu-Y1q0_Uxc6Gea1R8SN_GNVoarTlnVR7S47ayEupz8CnecTP8lo091-Y1ggyMU6rNNRmOTcI2BKmdQJoyqZ4ghUP4Zq66NBjlHLuXMom_1eBZ9yeCRRheHgUKzw' mises en cache.","timestamp":"2025-01-10T23:07:06.439Z"}

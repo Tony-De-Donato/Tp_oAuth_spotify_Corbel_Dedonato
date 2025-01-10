@@ -5,7 +5,7 @@ const {getSuccessResponse, getErrorResponse} = require("../services/responseServ
 
 
 const getRecentlyPlayed = async (req, res) => {
-    const accessTokenToMe = req.headers.authorization;
+    const accessToken = req.headers.authorization;
     log.info('Requested recently played tracks');
 
     if (!accessToken) {
@@ -14,7 +14,7 @@ const getRecentlyPlayed = async (req, res) => {
     }
 
     try {
-        const tracks = await fetchRecentlyPlayed(accessTokenToMe);
+        const tracks = await fetchRecentlyPlayed(accessToken);
         return getSuccessResponse(res, tracks);
     } catch (error) {
         log.error('Error while fetching recently played tracks', error.response?.data || error.message);
