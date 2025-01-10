@@ -5,16 +5,16 @@ const {getSuccessResponse, getErrorResponse} = require("../services/responseServ
 
 
 const getRecentlyPlayed = async (req, res) => {
-    const accessTokenToMe = req.headers.authorization;
+    const accessToken = req.headers.authorization?.replace(/bearer /i, "")
     log.info('Requested recently played tracks');
 
-    if (!accessTokenToMe) {
+    if (!accessToken) {
         log.error('Access token is not provided');
         return getErrorResponse(res, 401, 'Access token is not provided')
     }
 
     try {
-        const tracks = await fetchRecentlyPlayed(accessTokenToMe);
+        const tracks = await fetchRecentlyPlayed(accessToken);
         return getSuccessResponse(res, tracks);
     } catch (error) {
         log.error('Error while fetching recently played tracks', error.response?.data || error.message);
@@ -25,10 +25,9 @@ const getRecentlyPlayed = async (req, res) => {
     }
 };
 
-
 const searchTracks = async (req, res) => {
-    const query = req.query;
-    const accessToken = req.headers.authorization;
+    let { query } = req.query;
+    const accessToken = req.headers.authorization?.replace(/bearer /i, "")
     log.info('Requested track searching...');
 
     if (!query) {
@@ -56,7 +55,7 @@ const searchTracks = async (req, res) => {
 
 const getTrackPreview = async (req, res) => {
     const { track_id } = req.query;
-    const accessToken = req.headers.authorization;
+    const accessToken = req.headers.authorization?.replace(/bearer /i, "")
     log.info('Requested track preview data...');
 
     if (!track_id) {
@@ -79,6 +78,7 @@ const getTrackPreview = async (req, res) => {
         const artistId = trackDetails.artists[0].id;
         const artistDetails = await fetchArtistDetails(artistId, accessToken);
         const response = {
+            track_name: trackDetails.name,
             album_img: trackDetails.album.images[0]?.url || null,
             album_name: trackDetails.album.name,
             release_date: trackDetails.album.release_date,
