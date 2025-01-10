@@ -22,8 +22,8 @@ function LandingPage() {
         try {
             const response = await fetch(`${API_BASE_URL}${authUrl}`);
             const data = await response.json();
-            if (data.url) {
-                window.open(data.url, '_blank');
+            if (data.data.url) {
+                window.open(data.data.url, '_blank');
             } else {
                 console.error('Login URL not found');
             }

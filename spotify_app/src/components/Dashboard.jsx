@@ -39,12 +39,12 @@ const Dashboard = () => {
         try {
             const response = await axios.get(`${API_BASE_URL}${RECENTLY_PLAYED_TRACKS_ROUTE}`, {
                 headers: {
-                    Authorization: token,
+                    Authorization: `Bearer ${token}`,
                 },
             });
             console.log(`fetching ${API_BASE_URL}${RECENTLY_PLAYED_TRACKS_ROUTE}`)
 
-            const uniqueTracks = response.data.items.filter(
+            const uniqueTracks = response.data.data.items.filter(
                 (item, index, self) => index === self.findIndex((t) => t.track.id === item.track.id)
             );
 
@@ -67,14 +67,15 @@ const Dashboard = () => {
             return;
         }
         try {
+            console.log(`fetching ${API_BASE_URL}${SEARCH_TRACKS_ROUTE}${encodeURIComponent(searchQuery)}`)
             const response = await axios.get(`${API_BASE_URL}${SEARCH_TRACKS_ROUTE}${encodeURIComponent(searchQuery)}`, {
                 headers: {
-                    Authorization: token,
+                    Authorization: `Bearer ${token}`,
                 },
             });
-            console.log(`fetching ${API_BASE_URL}${SEARCH_TRACKS_ROUTE}${encodeURIComponent(searchQuery)}`)
+
             setTracks([]);
-            setTracks(response.data.tracks.items.map((track) => ({
+            setTracks(response.data.data.tracks.items.map((track) => ({
                 id: track.id,
                 name: track.name,
                 artists: track.artists.map((a) => a.name).join(', '),
