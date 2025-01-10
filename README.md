@@ -1,6 +1,6 @@
 # TP 2 - API Spotify OAuth2
 
-Rendu du TP 2 du cours de développement back-end par **Tony De Donato** et Marianne Corbel.
+Rendu du TP 2 du cours de développement back-end par **Tony De Donato** et **Marianne Corbel**.
 
 ## Prérequis 
 
