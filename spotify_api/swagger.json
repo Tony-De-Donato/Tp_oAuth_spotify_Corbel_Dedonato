@@ -2,14 +2,14 @@
     "openapi": "3.0.0",
     "servers": [
         {
-            "description": "Spotify API",
+            "description": "Spotify OAuth2 API",
             "url": "http://localhost:3000"
         }
     ],
     "info": {
-        "description": "This is a simple API",
-        "version": "1.0.0",
-        "title": "TP2 - Spotify API"
+        "description": "Marianne Corbel & Tony de Donato, B3 INFO DEV ♥",
+        "version": "1.0.1",
+        "title": "TP2 - Spotify OAuth2 API"
     },
     "tags": [
         {
@@ -84,7 +84,7 @@
                         "description": "Missing or wrong authentication header"
                     },
                     "500": {
-                        "description": "test"
+                        "description": "Server error"
                     }
                 },
                 "tags": [
@@ -108,7 +108,8 @@
                             "type": "string"
                         },
                         "required": true,
-                        "description": "Search query"
+                        "description": "Search query",
+                        "example": "linkin park heavy is the crown"
                     }
                 ],
                 "security": [
@@ -145,7 +146,8 @@
                         "schema": {
                             "type": "string"
                         },
-                        "required": true
+                        "required": true,
+                        "example": "4PTG3Z6ehGkBFwjybzWkR8"
                     }
                 ],
                 "security": [

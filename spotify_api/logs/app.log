@@ -362,3 +362,9 @@
 {"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T21:49:31.138Z"}
 {"level":"info","message":"Requested track searching...","timestamp":"2025-01-10T21:49:49.219Z"}
 {"level":"error","message":"Access token is not provided","timestamp":"2025-01-10T21:49:49.222Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T21:51:21.722Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T21:51:47.685Z"}
+{"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2025-01-10T21:51:47.919Z"}
+{"level":"info","message":"Données pour la clé 'recentlyPlayed:BQBOc9sx0CqFOAB_RAaEAQmQKfXcHiIALWsIH_87U1xY8tdKGdEDtiJy_Cr2_zuQzWSlYOkX_kvqxODD7u3pnUeHHIc-JoYIaQ6ShmSsCevU47raPkelt7NkQV22tW0KNLllzl2paF9scWmx93cv1pietD5r4VHo7fKpycsvPNu3cfaNgMvuv4BLas3YS_gpeNEWjMZkZQIw_WmvUUw' mises en cache.","timestamp":"2025-01-10T21:51:47.922Z"}
+{"level":"info","message":"Requested recently played tracks","timestamp":"2025-01-10T21:52:31.463Z"}
+{"level":"error","message":"Access token is not provided","timestamp":"2025-01-10T21:52:31.463Z"}
