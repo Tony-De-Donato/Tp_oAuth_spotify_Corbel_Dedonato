@@ -183,3 +183,47 @@
 {"level":"info","message":"Données des morceaux récemment joués récupérées depuis l'API.","timestamp":"2024-12-13T15:52:12.708Z"}
 {"level":"info","message":"Données pour la clé 'recentlyPlayed:BQA0Se-H6SMYgH2Yr6D21iSDRbZiZgV0kaRL19vW9KTfrkXfvZnYaiuVvwLmBFufSSASE4IR9uwkp6XREmZBiu3HrvCrF8pC29QEJFCA1VhDpDMev7G6xHQGEYYKtQki5MVgTU3l22OpCAYkCgCBc20ebO_0BNlQ8Mnox4cHQFH8sQsD-tXIgYlZtB3v' mises en cache.","timestamp":"2024-12-13T15:52:12.710Z"}
 {"level":"info","message":"Recently played tracks successfully fetched","timestamp":"2024-12-13T15:52:12.711Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-07T14:43:04.887Z"}
+{"level":"info","message":"Authorization Code Grant URL generated","timestamp":"2025-01-07T14:43:23.493Z"}
+{"level":"info","message":"Authorization Code Grant URL sent","timestamp":"2025-01-07T14:43:23.496Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-07T15:14:12.530Z"}
+{"level":"info","message":"Authorization Code Grant URL generated","timestamp":"2025-01-07T15:38:23.962Z"}
+{"level":"info","message":"Authorization Code Grant URL sent","timestamp":"2025-01-07T15:38:23.963Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T16:51:59.294Z"}
+{"level":"info","message":"Authorization Code Grant URL generated","timestamp":"2025-01-10T16:52:24.914Z"}
+{"level":"info","message":"Authorization Code Grant URL sent","timestamp":"2025-01-10T16:52:24.928Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T16:54:27.559Z"}
+{"level":"info","message":"Authorization Code Grant URL generated","timestamp":"2025-01-10T16:54:32.376Z"}
+{"level":"info","message":"Authorization Code Grant URL sent","timestamp":"2025-01-10T16:54:32.379Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T18:49:17.767Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T18:49:55.420Z"}
+{"level":"info","message":"Authorization Code Grant URL generated","timestamp":"2025-01-10T18:50:03.290Z"}
+{"level":"info","message":"Successfully generated Code Grant URL","timestamp":"2025-01-10T18:50:03.291Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T18:51:02.015Z"}
+{"level":"info","message":"Authorization Code Grant URL generated","timestamp":"2025-01-10T18:51:04.316Z"}
+{"level":"info","message":"Successfully generated Code Grant URL","timestamp":"2025-01-10T18:51:04.320Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T18:54:15.670Z"}
+{"level":"info","message":"Authorization Code Grant URL generated","timestamp":"2025-01-10T18:54:19.977Z"}
+{"level":"info","message":"Successfully generated Code Grant URL","timestamp":"2025-01-10T18:54:19.980Z"}
+{"level":"info","message":"Authorization Code Grant URL generated","timestamp":"2025-01-10T18:54:22.454Z"}
+{"level":"info","message":"Successfully generated Code Grant URL","timestamp":"2025-01-10T18:54:22.455Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T18:54:45.214Z"}
+{"level":"info","message":"Authorization Code Grant URL generated","timestamp":"2025-01-10T18:54:46.475Z"}
+{"level":"info","message":"Successfully generated Code Grant URL","timestamp":"2025-01-10T18:54:46.478Z"}
+{"level":"info","message":"Authorization Code Grant URL generated","timestamp":"2025-01-10T18:55:50.202Z"}
+{"level":"info","message":"Successfully generated Code Grant URL","timestamp":"2025-01-10T18:55:50.204Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T18:56:38.679Z"}
+{"level":"info","message":"Successfully generated Code Grant URL","timestamp":"2025-01-10T18:56:41.580Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T19:10:21.702Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T19:10:54.777Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T19:13:25.073Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T20:19:47.102Z"}
+{"level":"info","message":"Successfully generated Implicit Grant URL","timestamp":"2025-01-10T20:20:34.306Z"}
+{"level":"error","message":"Authorization code not provided","timestamp":"2025-01-10T20:20:52.726Z"}
+{"level":"error","message":"Authorization code not provided","timestamp":"2025-01-10T20:23:40.623Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T20:28:04.411Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-01-10T20:28:33.222Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T20:28:37.632Z"}
+{"level":"info","message":"Successfully generated Authorization Code Grant URL","timestamp":"2025-01-10T20:28:38.742Z"}
+{"level":"info","message":"Successfully generated Implicit Grant URL","timestamp":"2025-01-10T20:33:09.612Z"}
+{"level":"info","message":"Successfully generated Implicit Grant URL","timestamp":"2025-01-10T20:33:37.259Z"}

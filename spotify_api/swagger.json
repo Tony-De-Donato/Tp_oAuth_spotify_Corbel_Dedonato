@@ -1,0 +1,26 @@
+{
+    "openapi": "3.0.0",
+    "servers": [
+        {
+            "description": "Spotify API",
+            "url": "http://localhost:3000"
+        }
+    ],
+    "info": {
+        "description": "This is a simple API",
+        "version": "1.0.0",
+        "title": "TP2 - Spotify API"
+    },
+    "paths": {
+        "/heyo": {
+            "get": {
+                "summary": "searches inventory",
+                "responses": {
+                    "201": {
+                        "description": "test"
+                    }
+                }
+            }
+        }
+    }
+}

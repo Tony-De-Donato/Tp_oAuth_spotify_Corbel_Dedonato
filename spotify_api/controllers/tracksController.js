@@ -1,5 +1,5 @@
-
 const { fetchRecentlyPlayed, fetchTracks ,fetchTrackDetails, fetchArtistDetails } = require('../services/spotifyApiService');
+const { getSuccessResponse, getErrorResponse } = require('../services/responseService');
 const log = require('../logger');
 
 /**
@@ -9,20 +9,19 @@ const log = require('../logger');
  */
 const getRecentlyPlayed = async (req, res) => {
     const accessTokenToMe = req.headers.authorization;
-    log.info('Recently played tracks requested');
+    log.info('Requested recently played tracks');
 
     if (!accessTokenToMe) {
         log.error('Access token is not provided');
-        return res.status(401).json({ error: 'Access token is required' });
+        return getErrorResponse(res, 401, 'Access token is not provided')
     }
 
     try {
         const tracks = await fetchRecentlyPlayed(accessTokenToMe);
-        res.json(tracks);
-        log.info('Recently played tracks successfully fetched');
+        return getSuccessResponse(res, tracks);
     } catch (error) {
         log.error('Error while fetching recently played tracks', error.response?.data || error.message);
-        res.status(500).json({ error: error.message });
+        return getErrorResponse(res, 500, 'Failed to fetch recently played tracks: ' + error.message)
     }
 };
 
@@ -32,13 +31,13 @@ const getRecentlyPlayed = async (req, res) => {
  * @param {object} res - Réponse HTTP.
  */
 const searchTracks = async (req, res) => {
-    const { query } = req.query;
+    const query = req.query;
     const accessToken = req.headers.authorization;
-    log.info('Search tracks requested');
+    log.info('Requested track searching...');
 
     if (!query) {
         log.error('Query parameter is not provided');
-        return res.status(400).json({ error: 'Query parameter is required.' });
+        return getErrorResponse(res, 400, 'Query parameter is required.')
     }
     if (!accessToken) {
         log.error('Access token is not provided');
@@ -47,14 +46,13 @@ const searchTracks = async (req, res) => {
 
     try {
         const tracks = await fetchTracks(accessToken, query);
-        res.json(tracks);
-        log.info('Tracks successfully fetched');
+        log.info('Successfully fetched searched tracks.');
+        return getSuccessResponse(res, tracks);
     } catch (error) {
         log.error('Error while searching tracks', error.response?.data || error.message);
-        res.status(500).json({ error: 'Failed to search tracks.' });
+        return getErrorResponse(res, 500, `Error while searching tracks: ${error.message}.`)
     }
 };
-
 
 /**
  * Récupère des informations sur un morceau.
@@ -64,7 +62,7 @@ const searchTracks = async (req, res) => {
 const getTrackPreview = async (req, res) => {
     const { track_id } = req.query;
     const accessToken = req.headers.authorization;
-    log.info('Track preview requested');
+    log.info('Requested track preview data...');
 
     if (!track_id) {
         log.error('Track ID is not provided');

@@ -1,5 +1,6 @@
 const { getAuthorizationCodeUrl, getImplicitGrantUrl, exchangeAuthorizationCode } = require('../services/spotifyAuthService');
 const log = require('../logger');
+const {getSuccessResponse} = require("../services/responseService");
 
 /**
  * Fournit l'URL pour Authorization Code Grant.
@@ -7,9 +8,8 @@ const log = require('../logger');
  * @param {object} res - Réponse HTTP.
  */
 const getAuthCodeUrl = (req, res) => {
-  const url = getAuthorizationCodeUrl();
-  res.json({ url });
-  log.info('Authorization Code Grant URL sent');
+  getSuccessResponse(res, {url: getAuthorizationCodeUrl()})
+  log.info('Successfully generated Authorization Code Grant URL');
 };
 
 /**
@@ -18,9 +18,8 @@ const getAuthCodeUrl = (req, res) => {
  * @param {object} res - Réponse HTTP.
  */
 const getImplicitAuthUrl = (req, res) => {
-  const url = getImplicitGrantUrl();
-  res.json({ url });
-  log.info('Implicit Grant URL sent');
+  getSuccessResponse(res, {url: getImplicitGrantUrl()})
+  log.info('Successfully generated Implicit Grant URL');
 };
 
 /**
@@ -43,8 +42,8 @@ const handleAuthCodeCallback = async (req, res) => {
 
   try {
     const tokenData = await exchangeAuthorizationCode(code);
-    res.json(tokenData);
-    log.info('Token data received successfully');
+    log.info('Successfully exchanged token data');
+    return getSuccessResponse(res, tokenData);
   } catch (error) {
     log.error('Error while exchanging authorization code for token', error.message || error);
     res.status(500).json({ error: error.message });

@@ -16,8 +16,6 @@ const getAuthorizationCodeUrl = () => {
     redirect_uri: process.env.SPOTIFY_REDIRECT_URI,
     scope: 'user-read-recently-played',
   });
-
-  log.info('Authorization Code Grant URL generated');
   return `${SPOTIFY_AUTH_URL}?${params.toString()}`;
 };
 
@@ -32,8 +30,6 @@ const getImplicitGrantUrl = () => {
     redirect_uri: process.env.SPOTIFY_REDIRECT_URI,
     scope: 'user-read-recently-played',
   });
-
-  log.info('Implicit Grant URL generated');
   return `${SPOTIFY_AUTH_URL}?${params.toString()}`;
 };
 
