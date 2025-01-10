@@ -5,7 +5,7 @@ Rendu du TP 2 du cours de développement back-end par **Tony De Donato** et Mari
 ## Prérequis 
 
 L'utilisateur doit avoir créé une application Spotify sur le [dashboard](https://developer.spotify.com/dashboard) de son compte personnel et y avoir rempli les champs suivants :
-- **Redirect URI** : `-   http://localhost:3000/auth/callback`
+- **Redirect URI** : `http://localhost:3000/auth/callback`
 - **APIs used** : `Web API`
 
 Une fois créée, l'utilisateur pourra y récupérer son `client ID` et son `client secret` qui seront à renseigner dans le fichier `/spotify_app/.env` 
@@ -38,7 +38,9 @@ Dans les deux cas, les modules nodes doivent être installés dans chacun des de
  L'utilisateur doit renommer le fichier `/spotify_api/.env.example` en `/spotify_api/.env` et y remplir à minima les variables `SPOTIFY_CLIENT_ID` et `SPOTIFY_CLIENT_SECRET` avec les informations liées à l'application spotify créée au préalable (voir prérequis).
 
 Ensuite, le serveur peut être lancé à l'aide de la commande suivante :
-```npm start``` 
+```
+npm start
+``` 
 
 Il sera par défaut disponible sur le port **3000** de la machine.
 
@@ -47,7 +49,9 @@ Il sera par défaut disponible sur le port **3000** de la machine.
 De la même façon, l'utilisateur doit renommer le fichier `/spotify_app/.env.example` en `/spotify_app/.env` mais aucune configuration supplémentaire n'est nécessaire pour que le projet fonctionne.
 
 L'application peut être lancée par la commande suivante, qui le rendra disponible sur le port **3001** :
-```npm run start```
+```
+npm run start
+```
 
 ## Documentation
 
