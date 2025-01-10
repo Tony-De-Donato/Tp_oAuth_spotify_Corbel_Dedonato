@@ -25,7 +25,7 @@ const TrackPreview = ({ trackId }) => {
             try {
                 const response = await axios.get(`${API_BASE_URL}${TRACK_PREVIEW_ROUTE}${trackId}`, {
                     headers: {
-                        Authorization: token,
+                        Authorization: `Bearer ${token}`,
                     },
                 });
                 setTrackDetails(response.data);
