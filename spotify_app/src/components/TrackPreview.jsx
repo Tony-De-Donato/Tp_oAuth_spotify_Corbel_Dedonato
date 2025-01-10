@@ -44,7 +44,7 @@ const TrackPreview = ({ trackId }) => {
         </PreviewContainer>
     }
 
-    const {album_img, album_name, release_date, artist_img, artist_name, popularity } = trackDetails;
+    const {track_name, album_img, album_name, release_date, artist_img, artist_name, popularity } = trackDetails;
 
     return (
         <PreviewContainer>
@@ -52,6 +52,9 @@ const TrackPreview = ({ trackId }) => {
             <AlbumInfo>
                 <AlbumImage src={album_img || '/placeholder-album.png'} alt={album_name || 'Unknown Album'} />
                 <div>
+                    <Info>
+                        <Label>Title:</Label> <Value>{track_name || 'Unknown'}</Value>
+                    </Info>
                     <Info>
                         <Label>Album:</Label> <Value>{album_name || 'Unknown'}</Value>
                     </Info>
