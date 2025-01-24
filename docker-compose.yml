@@ -15,9 +15,6 @@ services:
     build:
       context: ./spotify_app
     ports:
-      - "3001:3001"
-    volumes:
-      - ./spotify_app:/usr/src/app
+      - "3001:80" # Mapper le port 3001 vers 80 pour nginx
     depends_on:
       - api
-
